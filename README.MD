@@ -12,6 +12,8 @@ Navigation through the page is best with Ctrl+F.
   - [C++](#c++)
   - [CSS](#css)
   - [Cuda](#cuda)
+  - [Cython](#cython)
+  - [Dockerfile](#dockerfile)
   - [Fortran](#fortran)
   - [Go](#go)
   - [HTML](#html)
@@ -25,6 +27,7 @@ Navigation through the page is best with Ctrl+F.
   - [Others](#others)
   - [PHP](#php)
   - [Python](#python)
+  - [R](#r)
   - [Rust](#rust)
   - [Shell](#shell)
   - [TeX](#tex)
@@ -33,377 +36,505 @@ Navigation through the page is best with Ctrl+F.
 
 ## C 
 
-- [openexr](https://github.com/AcademySoftwareFoundation/openexr) - The OpenEXR project provides the specification and reference implementation of the EXR file format, the professional-grade image storage format of the motion picture industry.
-- [bundler_sfm](https://github.com/snavely/bundler_sfm) - Bundler Structure from Motion Toolkit
-- [libheatmap](https://github.com/lucasb-eyer/libheatmap) - High performance C heatmap generation library. Supposed to be wrapped by higher-level languages.
-- [cvxopt](https://github.com/cvxopt/cvxopt) - CVXOPT -- Python Software for Convex Optimization
-- [libgphoto2](https://github.com/gphoto/libgphoto2) - The libgphoto2 camera access and control library.
-- [FiniteStateEntropy](https://github.com/Cyan4973/FiniteStateEntropy) - New generation entropy codecs : Finite State Entropy and Huff0
-- [zstd](https://github.com/facebook/zstd) - Zstandard - Fast real-time compression algorithm
-- [scs](https://github.com/cvxgrp/scs) - C package that solves convex cone problems via operator splitting
-- [aravis](https://github.com/AravisProject/aravis) - A vision library for genicam based cameras
-- [apriltag](https://github.com/AprilRobotics/apriltag) - AprilTag is a visual fiducial system popular for robotics research.
-- [ImageSmoothing](https://github.com/soundsilence/ImageSmoothing) - A collection of image smoothing algorithms.
-- [suitesparse](https://github.com/jluttine/suitesparse) - PLEASE SEE THE OFFICIAL REPOSITORY. THIS IS NOT MAINTAINED ANYMORE.
-- [TinyJPEG](https://github.com/serge-rgb/TinyJPEG) - Single header lib for JPEG encoding. Public domain. C99. stb style.
-- [trimesh2](https://github.com/Forceflow/trimesh2) - C++ library and set of utilities for input, output, and basic manipulation of 3D triangle meshes
-- [libgpg-error](https://github.com/gpg/libgpg-error) - Error codes used by GnuPG et al. NOTE: Maintainers are not tracking this mirror. Do not make pull requests here, nor comment any commits, submit them usual way to bug tracker (https://www.gnupg.org/documentation/bts.html) or to the mailing list (https://www.gnupg.org/documentation/mailing-lists.html).
-- [libgcrypt](https://github.com/gpg/libgcrypt) - The GNU crypto library. NOTE: Maintainers are not tracking this mirror. Do not make pull requests here, nor comment any commits, submit them usual way to bug tracker (https://www.gnupg.org/documentation/bts.html) or to the mailing list (https://www.gnupg.org/documentation/mailing-lists.html).
-- [wireshark](https://github.com/wireshark/wireshark) - Read-only mirror of Wireshark's Git repository at https://gitlab.com/wireshark/wireshark. GitHub won't let us disable pull requests. ☞ THEY WILL BE IGNORED HERE ☜ Please upload them at GitLab.
-- [rgbd-calib](https://github.com/steppobeck/rgbd-calib) - A calibration software for RGBD-sensors like the Kinect. Please cite our work when using our software in your own research or publication.
-- [ogl-samples](https://github.com/g-truc/ogl-samples) - The OpenGL Samples Pack
+- [AIBluefisher/DAGSfM](https://github.com/AIBluefisher/DAGSfM) - Distributed and Graph-based Structure from Motion. This project includes the official implementation of our **Pattern Recognition 2020** paper: Graph-Based Parallel Large Scale Structure from Motion.
+- [microsoft/Azure-Kinect-Samples](https://github.com/microsoft/Azure-Kinect-Samples) - Samples for Azure Kinect
+- [ramakarl/just_math](https://github.com/ramakarl/just_math) - Just Math - A collection of pure math demos for computer graphics.
+- [vlfeat/vlfeat](https://github.com/vlfeat/vlfeat) - An open library of computer vision algorithms
+- [serban/kmeans](https://github.com/serban/kmeans) - A CUDA implementation of the k-means clustering algorithm
+- [embotech/ecos](https://github.com/embotech/ecos) - A lightweight conic solver for second-order cone programming.
+- [AcademySoftwareFoundation/openexr](https://github.com/AcademySoftwareFoundation/openexr) - The OpenEXR project provides the specification and reference implementation of the EXR file format, the professional-grade image storage format of the motion picture industry.
+- [snavely/bundler_sfm](https://github.com/snavely/bundler_sfm) - Bundler Structure from Motion Toolkit
+- [lucasb-eyer/libheatmap](https://github.com/lucasb-eyer/libheatmap) - High performance C heatmap generation library. Supposed to be wrapped by higher-level languages.
+- [cvxopt/cvxopt](https://github.com/cvxopt/cvxopt) - CVXOPT -- Python Software for Convex Optimization
+- [gphoto/libgphoto2](https://github.com/gphoto/libgphoto2) - The libgphoto2 camera access and control library.
+- [Cyan4973/FiniteStateEntropy](https://github.com/Cyan4973/FiniteStateEntropy) - New generation entropy codecs : Finite State Entropy and Huff0
+- [facebook/zstd](https://github.com/facebook/zstd) - Zstandard - Fast real-time compression algorithm
+- [cvxgrp/scs](https://github.com/cvxgrp/scs) - Splitting Conic Solver
+- [AravisProject/aravis](https://github.com/AravisProject/aravis) - A vision library for genicam based cameras
+- [AprilRobotics/apriltag](https://github.com/AprilRobotics/apriltag) - AprilTag is a visual fiducial system popular for robotics research.
+- [sai-bi/ImageSmoothing](https://github.com/sai-bi/ImageSmoothing) - A collection of image smoothing algorithms.
+- [jluttine/suitesparse](https://github.com/jluttine/suitesparse) - PLEASE SEE THE OFFICIAL REPOSITORY. THIS IS NOT MAINTAINED ANYMORE.
+- [serge-rgb/TinyJPEG](https://github.com/serge-rgb/TinyJPEG) - Single header lib for JPEG encoding. Public domain. C99. stb style.
+- [Forceflow/trimesh2](https://github.com/Forceflow/trimesh2) - C++ library and set of utilities for input, output, and basic manipulation of 3D triangle meshes
+- [gpg/libgpg-error](https://github.com/gpg/libgpg-error) - Error codes used by GnuPG et al. NOTE: Maintainers are not tracking this mirror. Do not make pull requests here, nor comment any commits, submit them usual way to bug tracker (https://www.gnupg.org/documentation/bts.html) or to the mailing list (https://www.gnupg.org/documentation/mailing-lists.html).
+- [gpg/libgcrypt](https://github.com/gpg/libgcrypt) - The GNU crypto library. NOTE: Maintainers are not tracking this mirror. Do not make pull requests here, nor comment any commits, submit them usual way to bug tracker (https://www.gnupg.org/documentation/bts.html) or to the mailing list (https://www.gnupg.org/documentation/mailing-lists.html).
+- [wireshark/wireshark](https://github.com/wireshark/wireshark) - Read-only mirror of Wireshark's Git repository at https://gitlab.com/wireshark/wireshark. GitHub won't let us disable pull requests. ☞ THEY WILL BE IGNORED HERE ☜ Please upload them at GitLab.
+- [steppobeck/rgbd-calib](https://github.com/steppobeck/rgbd-calib) - A calibration software for RGBD-sensors like the Kinect. Please cite our work when using our software in your own research or publication.
+- [g-truc/ogl-samples](https://github.com/g-truc/ogl-samples) - The OpenGL Samples Pack
+- [CameraKit/camerakit-android](https://github.com/CameraKit/camerakit-android) - Library for Android Camera 1 and 2 APIs. Massively increase stability and reliability of photo and video capture on all Android devices.
 
 ## C# # 
 
-- [Swarm](https://github.com/keijiro/Swarm) - An example of use of compute shaders and procedural instancing.
+- [keijiro/Swarm](https://github.com/keijiro/Swarm) - An example of use of compute shaders and procedural instancing.
 
 ## C++ 
 
-- [gpu-voxels](https://github.com/fzi-forschungszentrum-informatik/gpu-voxels) - GPU-Voxels is a CUDA based library which allows high resolution volumetric collision detection between animated 3D models and live pointclouds from 3D sensors of all kinds.
-- [lbp-library](https://github.com/carolinepacheco/lbp-library) - LBP Library - A Collection of LBP algorithms for background subtraction in videos.
-- [ApproxMVBB](https://github.com/gabyx/ApproxMVBB) - Fast algorithms to compute an approximation of the minimal volume oriented bounding box of a point cloud in 3D.
-- [nicp](https://github.com/yorsh87/nicp) - Normal Iterative Closest Point (NICP) Algorithm C++ Library
-- [ManifoldPlus](https://github.com/hjwdzh/ManifoldPlus) - ManifoldPlus: A Robust and Scalable Watertight Manifold Surface Generation Method for Triangle Soups
-- [SSBA](https://github.com/chzach/SSBA) - Sparse Levenberg-Marquardt based non-linear least squares optimizer and bundle adjustment implementation
-- [cuda-bundle-adjustment](https://github.com/fixstars/cuda-bundle-adjustment) - A CUDA implementation of Bundle Adjustment
-- [arrow](https://github.com/apache/arrow) - Apache Arrow is a cross-language development platform for in-memory data. It specifies a standardized language-independent columnar memory format for flat and hierarchical data, organized for efficient analytic operations on modern hardware. It also provides computational libraries and zero-copy streaming messaging and interprocess communication. Languages currently supported include C, C++, Java, JavaScript, Python, and Ruby.
-- [Pandora_libSGM](https://github.com/CNES/Pandora_libSGM) - 
-- [InfrasCal](https://github.com/youkely/InfrasCal) - InfrasCal: Automatic Infrastructure-based Intrinsic and Extrinsic Calibration of a Multi-camera System
-- [replxx](https://github.com/AmokHuginnsson/replxx) - A readline and libedit replacement that supports UTF-8, syntax highlighting, hints and Windows and is BSD licensed.
-- [PoissonRecon](https://github.com/mkazhdan/PoissonRecon) - Poisson Surface Reconstruction
-- [loguru](https://github.com/emilk/loguru) - A lightweight C++ logging library
-- [kalibr](https://github.com/ethz-asl/kalibr) - The Kalibr visual-inertial calibration toolbox
-- [fmt](https://github.com/fmtlib/fmt) - A modern formatting library
-- [glog](https://github.com/google/glog) - C++ implementation of the Google logging module
-- [3DUNDERWORLD-SLS-GPU_CPU](https://github.com/theICTlab/3DUNDERWORLD-SLS-GPU_CPU) - A structured light scanner
-- [sltk](https://github.com/jhdewitt/sltk) - An OpenCV-based structured light processing toolkit.
-- [fast-slic](https://github.com/Algy/fast-slic) - 20x Real-time superpixel SLIC Implementation with CPU
-- [meshlab](https://github.com/cnr-isti-vclab/meshlab) - The open source mesh processing system
-- [cvxpy](https://github.com/cvxgrp/cvxpy) - A Python-embedded modeling language for convex optimization problems.
-- [UVAtlas](https://github.com/microsoft/UVAtlas) - UVAtlas isochart texture atlas
-- [mitsuba2](https://github.com/mitsuba-renderer/mitsuba2) - Mitsuba 2: A Retargetable Forward and Inverse Renderer
-- [kinfu_remake](https://github.com/Nerei/kinfu_remake) - Optimized and reworked version of Kinfu
-- [opengv](https://github.com/laurentkneip/opengv) - OpenGV is a collection of computer vision methods for solving geometric vision problems. It is hosted and maintained by the Mobile Perception Lab of ShanghaiTech.
-- [pogs](https://github.com/foges/pogs) - Proximal Operator Graph Solver
-- [camera_calibration](https://github.com/puzzlepaint/camera_calibration) - Accurate geometric camera calibration with generic camera models
-- [FARM](https://github.com/riccardomarin/FARM) - FARM: Functional Automatic Registration Method for 3D Human Bodies
-- [cilantro](https://github.com/kzampog/cilantro) - A lean C++ library for working with point cloud data
-- [flashlight](https://github.com/facebookresearch/flashlight) - A C++ standalone library for machine learning
-- [TEASER-plusplus](https://github.com/MIT-SPARK/TEASER-plusplus) - A fast and robust point cloud registration library
-- [draco](https://github.com/google/draco) - Draco is a library for compressing and decompressing 3D geometric meshes and point clouds. It is intended to improve the storage and transmission of 3D graphics.
-- [xtensor](https://github.com/xtensor-stack/xtensor) - C++ tensors with broadcasting and lazy computing
-- [LibRaw](https://github.com/LibRaw/LibRaw) - LibRaw is a library for reading RAW files from digital cameras
-- [SE-Sync](https://github.com/david-m-rosen/SE-Sync) - An implementation of the SE-Sync algorithm for synchronization over the special Euclidean group.
-- [VoxelHashing](https://github.com/niessner/VoxelHashing) - [Siggraph Asia 2013] Large-Scale, Real-Time 3D Reconstruction
-- [fastfusion](https://github.com/tum-vision/fastfusion) - Volumetric 3D Mapping in Real-Time on a CPU
-- [indicators](https://github.com/p-ranav/indicators) - Activity Indicators for Modern C++
-- [visp](https://github.com/lagadic/visp) - Open Source Visual Servoing Platform
-- [CloudCompare](https://github.com/CloudCompare/CloudCompare) - CloudCompare main repository
-- [Sophus](https://github.com/stevenlovegrove/Sophus) - C++ implementation of Lie Groups using Eigen.
-- [OpenNI2](https://github.com/occipital/OpenNI2) - OpenNI2
-- [Stopwatch](https://github.com/mp3guy/Stopwatch) - Easy to use simple benchmarking tool
-- [ElasticFusion](https://github.com/mp3guy/ElasticFusion) - Real-time dense visual SLAM system
-- [Kintinuous](https://github.com/mp3guy/Kintinuous) - Real-time large scale dense visual SLAM system
-- [Depth-Image-Quality-Enhancement](https://github.com/mdcnn/Depth-Image-Quality-Enhancement) - 
-- [iResNet](https://github.com/leonzfa/iResNet) - 
-- [AliceVision](https://github.com/alicevision/AliceVision) - Photogrammetric Computer Vision Framework
-- [surfelmeshing](https://github.com/puzzlepaint/surfelmeshing) - Real-time surfel-based mesh reconstruction from RGB-D video.
-- [Open3D](https://github.com/intel-isl/Open3D) - Open3D: A Modern Library for 3D Data Processing
-- [vicalib](https://github.com/arpg/vicalib) - Visual-Inertial Calibration Tool
-- [cvkit](https://github.com/roboception/cvkit) - Computer Vision Toolkit. cvkit is available for Linux as well as for Windows. It offers useful tools for viewing and analyzing images and 3d models.
-- [robin-hood-hashing](https://github.com/martinus/robin-hood-hashing) - Fast & memory efficient hashtable based on robin hood hashing for C++11/14/17/20
-- [cartographer](https://github.com/cartographer-project/cartographer) - Cartographer is a system that provides real-time simultaneous localization and mapping (SLAM) in 2D and 3D across multiple platforms and sensor configurations.
-- [gperftools](https://github.com/gperftools/gperftools) - Main gperftools repository
-- [sgm](https://github.com/dhernandez0/sgm) - Semi-Global Matching on the GPU
-- [visionworkbench](https://github.com/visionworkbench/visionworkbench) - The NASA Vision Workbench is a general purpose image processing and computer vision library developed by the Autonomous Systems and Robotics (ASR) Area in the Intelligent Systems Division at the NASA Ames Research Center.
-- [pop_up_slam](https://github.com/shichaoy/pop_up_slam) - Pop-up SLAM: Semantic Monocular Plane SLAM for Low-texture Environments
-- [intrinsic3d](https://github.com/NVlabs/intrinsic3d) - Intrinsic3D - High-Quality 3D Reconstruction by Joint Appearance and Geometry Optimization with Spatially-Varying Lighting (ICCV 2017)
-- [GH-ICP](https://github.com/YuePanEdward/GH-ICP) - GH-ICP: Iterative Closest Point algorithm with global optimal matching and hybrid metric [3DV' 18]
-- [magsac](https://github.com/danini/magsac) - The MAGSAC algorithm for robust model fitting without using an inlier-outlier threshold
-- [GRANSAC](https://github.com/drsrinathsridhar/GRANSAC) - Multi-threaded generic RANSAC implemetation
-- [mapmap_cpu](https://github.com/dthuerck/mapmap_cpu) - A high-performance general-purpose MRF MAP solver, heavily exploiting SIMD instructions.
-- [ligra](https://github.com/jshun/ligra) - Ligra: A Lightweight Graph Processing Framework for Shared Memory
-- [LocalExpStereo](https://github.com/t-taniai/LocalExpStereo) - Continuous 3D Label Stereo Matching using Local Expansion Moves (TPAMI 2018)
-- [gSLICr](https://github.com/carlren/gSLICr) - gSLICr: Real-time super-pixel segmentation
-- [gGMMSP-superpixels](https://github.com/ahban/gGMMSP-superpixels) - GMMSP on GPU: a real-time implementation of a high accuracy superpixel algorithm
-- [superpixels-revisited](https://github.com/davidstutz/superpixels-revisited) - Library containing 7 state-of-the-art superpixel algorithms with a total of 9 implementations used for evaluation purposes in [1] utilizing an extended version of the Berkeley Segmentation Benchmark.
-- [PatchMatch](https://github.com/nebula-beta/PatchMatch) - PathMatch is the state-of-the-art stereo match algorithm framework.
-- [robust_point_cloud_registration](https://github.com/ethz-asl/robust_point_cloud_registration) - Robust Point Cloud Registration Using Iterative Probabilistic Data Associations ("Robust ICP")
-- [online_photometric_calibration](https://github.com/tum-vision/online_photometric_calibration) - Implementation of online photometric calibration (https://vision.in.tum.de/research/vslam/photometric-calibration)
-- [SDR](https://github.com/TingmanYan/SDR) - Code for 'Segment-based Disparity Refinement with Occlusion Handling for Stereo Matching'
-- [FreeCAD-library](https://github.com/FreeCAD/FreeCAD-library) - A library of Parts for FreeCAD. WARNING - This library is huge. It might take a long time to download and make the addons manager unresponsive for many minutes.
-- [lapjv](https://github.com/src-d/lapjv) - Linear Assignmment Problem solver using Jonker-Volgenant algorithm - Python 3 native module.
-- [pytorch](https://github.com/pytorch/pytorch) - Tensors and Dynamic neural networks in Python with strong GPU acceleration
-- [opencv_contrib](https://github.com/opencv/opencv_contrib) - Repository for OpenCV's extra modules
-- [opencv](https://github.com/opencv/opencv) - Open Source Computer Vision Library
-- [openMVG](https://github.com/openMVG/openMVG) - open Multiple View Geometry library. Basis for 3D computer vision and Structure from Motion.
-- [Clp](https://github.com/coin-or/Clp) - COIN-OR Linear Programming Solver
-- [gflags](https://github.com/gflags/gflags) - The gflags package contains a C++ library that implements commandline flags processing. It includes built-in support for standard types such as string and the ability to define flags in the source file in which they are used. Online documentation available at:
-- [lensfun](https://github.com/lensfun/lensfun) - The Lensfun project Git repository
-- [PRiMEStereoMatch](https://github.com/PRiME-project/PRiMEStereoMatch) - A heterogeneous and fully parallel stereo matching algorithm for depth estimation, implementing a local adaptive support weight (ADSW) Guided Image Filter (GIF) cost aggregation stage. Developed in both C++ and OpenCL.
-- [CPM](https://github.com/YinlinHu/CPM) - Efficient Coarse-to-Fine PatchMatch for Large Displacement Optical Flow, CVPR 2016
-- [CrossScalePatchMatch](https://github.com/rookiepig/CrossScalePatchMatch) - Cross-Scale Cost Aggregation for Stereo Matching (CVPR 2014 + TCSVT 2015)
-- [UETorch](https://github.com/facebookarchive/UETorch) - A Torch plugin for Unreal Engine 4.
-- [unrealcv](https://github.com/unrealcv/unrealcv) - UnrealCV: Connecting Computer Vision to Unreal Engine
-- [Pangolin](https://github.com/stevenlovegrove/Pangolin) - Pangolin is a lightweight portable rapid development library for managing OpenGL display / interaction and abstracting video input.
-- [ORB_SLAM2](https://github.com/raulmur/ORB_SLAM2) - Real-Time SLAM for Monocular, Stereo and RGB-D Cameras, with Loop Detection and Relocalization Capabilities
-- [badslam](https://github.com/ETH3D/badslam) - Bundle Adjusted Direct RGB-D SLAM
-- [tensorflow](https://github.com/tensorflow/tensorflow) - An Open Source Machine Learning Framework for Everyone
-- [cgal](https://github.com/CGAL/cgal) - The public CGAL repository, see the README below
-- [libigl](https://github.com/libigl/libigl) - Simple C++ geometry processing library.
-- [GPXSee](https://github.com/tumic0/GPXSee) - GPS log file viewer and analyzer with support for GPX, TCX, KML, FIT, IGC, NMEA, SLF, SML, LOC, GPI, GeoJSON and OziExplorer files.
-- [gpujpeg](https://github.com/hoopoe/gpujpeg) - Mirror JPEG compression and decompression accelerated on GPU
-- [simpleini](https://github.com/brofield/simpleini) - Cross-platform C++ library providing a simple API to read and write INI-style configuration files
-- [ceres-solver](https://github.com/ceres-solver/ceres-solver) - A large scale non-linear optimization library
-- [flann](https://github.com/mariusmuja/flann) - Fast Library for Approximate Nearest Neighbors
-- [eigen-git-mirror](https://github.com/eigenteam/eigen-git-mirror) - THIS MIRROR IS DEPRECATED -- New url: https://gitlab.com/libeigen/eigen
-- [pcl](https://github.com/PointCloudLibrary/pcl) - Point Cloud Library (PCL)
-- [colormap-shaders](https://github.com/kbinani/colormap-shaders) - A collection of shaders to draw color maps.
-- [mba](https://github.com/ddemidov/mba) - Scattered data interpolation with multilevel B-Splines
-- [TerraNNI](https://github.com/thomasmoelhave/TerraNNI) - TerraNNI interpolates grid DEMs from large 2D and 3D point clouds using a variant of natural neighbor interpolation.
-- [tpie](https://github.com/thomasmoelhave/tpie) - Templated Portable I/O Environment
-- [Sophus](https://github.com/strasdat/Sophus) - C++ implementation of Lie Groups using Eigen.
-- [BundleFusion](https://github.com/niessner/BundleFusion) - [Siggraph 2017] BundleFusion: Real-time Globally Consistent 3D Reconstruction using Online Surface Re-integration
-- [cuda_emicp_softassign](https://github.com/tttamaki/cuda_emicp_softassign) - CUDA-based implementations of Softassign and EM-ICP
-- [ICPCUDA](https://github.com/mp3guy/ICPCUDA) - Super fast implementation of ICP in CUDA for compute capable devices 3.5 or higher
-- [text-csv](https://github.com/roman-kashitsyn/text-csv) - C++ library for csv manipulations
-- [googletest](https://github.com/google/googletest) - Googletest - Google Testing and Mocking Framework
-- [apitrace](https://github.com/apitrace/apitrace) - Tools for tracing OpenGL, Direct3D, and other graphics APIs
-- [hpmc](https://github.com/sintefmath/hpmc) - HPMC is a small OpenGL/C/C++-library that extractes iso-surfaces of volumetric data directly on the GPU.
-- [vcglib](https://github.com/cnr-isti-vclab/vcglib) - The VCGlib is a C++, templated, no dependency, library for manipulation, processing and cleaning of triangle meshes
-- [tinyply](https://github.com/ddiakopoulos/tinyply) - :earth_africa: C++11 ply 3d mesh format importer & exporter
-- [imgui](https://github.com/ocornut/imgui) - Dear ImGui: Bloat-free Graphical User interface for C++ with minimal dependencies
-- [pydensecrf](https://github.com/lucasb-eyer/pydensecrf) - Python wrapper to Philipp Krähenbühl's dense (fully connected) CRFs with gaussian edge potentials.
-- [SiftGPU](https://github.com/pitzer/SiftGPU) - 
-- [Gpufit](https://github.com/gpufit/Gpufit) - GPU-accelerated Levenberg-Marquardt curve fitting in CUDA
-- [glbinding](https://github.com/cginternals/glbinding) - A C++ binding for the OpenGL API, generated using the gl.xml specification.
-- [globjects](https://github.com/cginternals/globjects) - C++ library strictly wrapping OpenGL objects.
-- [rgbd-recon](https://github.com/xaf-cv/rgbd-recon) - Real-time 3D-reconstruction from multiple RGBD-sensor streams. Please cite our work when using our software in your own research or publication.
-- [libmorton](https://github.com/Forceflow/libmorton) - C++ header-only library with methods to efficiently encode/decode Morton codes in/from 2D/3D coordinates
-- [lamure](https://github.com/Fabi3nn3/lamure) - LAMURE - C++-library for processing, level-of-detail management and visualization of large data sets. Please cite our work when using our software in your own research or publication.
-- [jsoncpp](https://github.com/open-source-parsers/jsoncpp) - A C++ library for interacting with JSON.
-- [bgfx](https://github.com/bkaradzic/bgfx) - Cross-platform, graphics API agnostic, "Bring Your Own Engine/Framework" style rendering library.
-- [nanogui](https://github.com/wjakob/nanogui) - Minimalistic GUI library for OpenGL
-- [easyexif](https://github.com/mayanklahiri/easyexif) - Tiny ISO-compliant C++ EXIF parsing library, third-party dependency free.
-- [QuantLib](https://github.com/lballabio/QuantLib) - The QuantLib C++ library
-- [CodeXL](https://github.com/GPUOpen-Archive/CodeXL) - CodeXL is a comprehensive tool suite that enables developers to harness the benefits of CPUs, GPUs and APUs.
-- [yaml-cpp](https://github.com/jbeder/yaml-cpp) - A YAML parser and emitter in C++
+- [mworchel/xatlas-python](https://github.com/mworchel/xatlas-python) - Python bindings for xatlas
+- [colmap/colmap](https://github.com/colmap/colmap) - COLMAP - Structure-from-Motion and Multi-View Stereo
+- [chrdiller/KinectFusionApp](https://github.com/chrdiller/KinectFusionApp) - Sample implementation of an application using KinectFusionLib
+- [mihaibujanca/dynamicfusion](https://github.com/mihaibujanca/dynamicfusion) - Implementation of Newcombe et al. CVPR 2015 DynamicFusion paper
+- [jpcy/xatlas](https://github.com/jpcy/xatlas) - Mesh parameterization / UV unwrapping library
+- [perdoch/hesaff](https://github.com/perdoch/hesaff) - Hessian Affine detector with SIFT descriptor, CMP implementation
+- [ducha-aiki/pydegensac](https://github.com/ducha-aiki/pydegensac) - Advanced RANSAC (DEGENSAC) with bells and whistles for H and F estimation
+- [NVIDIA/nvcomp](https://github.com/NVIDIA/nvcomp) - Repository for nvCOMP docs and examples. nvCOMP is a library for fast lossless compression/decompression on the GPU that can be downloaded from https://developer.nvidia.com/nvcomp.
+- [floe/surfacecast](https://github.com/floe/surfacecast) - SurfaceCast: send background-subtracted depth camera video via GStreamer (with optional perspective correction)
+- [microsoft/LightGBM](https://github.com/microsoft/LightGBM) - A fast, distributed, high performance gradient boosting (GBT, GBDT, GBRT, GBM or MART) framework based on decision tree algorithms, used for ranking, classification and many other machine learning tasks.
+- [dgrzech/sobfu](https://github.com/dgrzech/sobfu) - real-time 3D reconstruction of non-rigidly deforming scenes using depth data
+- [facebookresearch/faiss](https://github.com/facebookresearch/faiss) - A library for efficient similarity search and clustering of dense vectors.
+- [dmlc/xgboost](https://github.com/dmlc/xgboost) - Scalable, Portable and Distributed Gradient Boosting (GBDT, GBRT or GBM) Library,  for Python, R, Java, Scala, C++ and more. Runs on single machine, Hadoop, Spark, Dask, Flink and DataFlow
+- [michaelchughes/KMeansRex](https://github.com/michaelchughes/KMeansRex) - Fast, vectorized C++ implementation of K-Means using the Eigen matrix template library.  Includes Matlab and Python interfaces.
+- [polatory/polatory](https://github.com/polatory/polatory) - Fast, memory-efficient 3D spline interpolation and global kriging, via RBF (radial basis function) interpolation.
+- [osqp/osqp](https://github.com/osqp/osqp) - The Operator Splitting QP Solver
+- [fzi-forschungszentrum-informatik/gpu-voxels](https://github.com/fzi-forschungszentrum-informatik/gpu-voxels) - GPU-Voxels is a CUDA based library which allows high resolution volumetric collision detection between animated 3D models and live pointclouds from 3D sensors of all kinds.
+- [carolinepacheco/lbp-library](https://github.com/carolinepacheco/lbp-library) - LBP Library - A Collection of LBP algorithms for background subtraction in videos.
+- [gabyx/ApproxMVBB](https://github.com/gabyx/ApproxMVBB) - Fast algorithms to compute an approximation of the minimal volume oriented bounding box of a point cloud in 3D.
+- [yorsh87/nicp](https://github.com/yorsh87/nicp) - Normal Iterative Closest Point (NICP) Algorithm C++ Library
+- [hjwdzh/ManifoldPlus](https://github.com/hjwdzh/ManifoldPlus) - ManifoldPlus: A Robust and Scalable Watertight Manifold Surface Generation Method for Triangle Soups
+- [chzach/SSBA](https://github.com/chzach/SSBA) - Sparse Levenberg-Marquardt based non-linear least squares optimizer and bundle adjustment implementation
+- [fixstars/cuda-bundle-adjustment](https://github.com/fixstars/cuda-bundle-adjustment) - A CUDA implementation of Bundle Adjustment
+- [apache/arrow](https://github.com/apache/arrow) - Apache Arrow is a multi-language toolbox for accelerated data interchange and in-memory processing
+- [CNES/Pandora_libSGM](https://github.com/CNES/Pandora_libSGM) - 
+- [youkely/InfrasCal](https://github.com/youkely/InfrasCal) - InfrasCal: Automatic Infrastructure-based Intrinsic and Extrinsic Calibration of a Multi-camera System
+- [AmokHuginnsson/replxx](https://github.com/AmokHuginnsson/replxx) - A readline and libedit replacement that supports UTF-8, syntax highlighting, hints and Windows and is BSD licensed.
+- [mkazhdan/PoissonRecon](https://github.com/mkazhdan/PoissonRecon) - Poisson Surface Reconstruction
+- [emilk/loguru](https://github.com/emilk/loguru) - A lightweight C++ logging library
+- [ethz-asl/kalibr](https://github.com/ethz-asl/kalibr) - The Kalibr visual-inertial calibration toolbox
+- [fmtlib/fmt](https://github.com/fmtlib/fmt) - A modern formatting library
+- [google/glog](https://github.com/google/glog) - C++ implementation of the Google logging module
+- [theICTlab/3DUNDERWORLD-SLS-GPU_CPU](https://github.com/theICTlab/3DUNDERWORLD-SLS-GPU_CPU) - A structured light scanner
+- [jhdewitt/sltk](https://github.com/jhdewitt/sltk) - An OpenCV-based structured light processing toolkit.
+- [Algy/fast-slic](https://github.com/Algy/fast-slic) - 20x Real-time superpixel SLIC Implementation with CPU
+- [cnr-isti-vclab/meshlab](https://github.com/cnr-isti-vclab/meshlab) - The open source mesh processing system
+- [cvxpy/cvxpy](https://github.com/cvxpy/cvxpy) - A Python-embedded modeling language for convex optimization problems.
+- [microsoft/UVAtlas](https://github.com/microsoft/UVAtlas) - UVAtlas isochart texture atlas
+- [mitsuba-renderer/mitsuba2](https://github.com/mitsuba-renderer/mitsuba2) - Mitsuba 2: A Retargetable Forward and Inverse Renderer
+- [Nerei/kinfu_remake](https://github.com/Nerei/kinfu_remake) - Optimized and reworked version of Kinfu
+- [laurentkneip/opengv](https://github.com/laurentkneip/opengv) - OpenGV is a collection of computer vision methods for solving geometric vision problems. It is hosted and maintained by the Mobile Perception Lab of ShanghaiTech.
+- [foges/pogs](https://github.com/foges/pogs) - Proximal Operator Graph Solver
+- [puzzlepaint/camera_calibration](https://github.com/puzzlepaint/camera_calibration) - Accurate geometric camera calibration with generic camera models
+- [riccardomarin/FARM](https://github.com/riccardomarin/FARM) - FARM: Functional Automatic Registration Method for 3D Human Bodies
+- [kzampog/cilantro](https://github.com/kzampog/cilantro) - A lean C++ library for working with point cloud data
+- [flashlight/flashlight](https://github.com/flashlight/flashlight) - A C++ standalone library for machine learning
+- [MIT-SPARK/TEASER-plusplus](https://github.com/MIT-SPARK/TEASER-plusplus) - A fast and robust point cloud registration library
+- [google/draco](https://github.com/google/draco) - Draco is a library for compressing and decompressing 3D geometric meshes and point clouds. It is intended to improve the storage and transmission of 3D graphics.
+- [xtensor-stack/xtensor](https://github.com/xtensor-stack/xtensor) - C++ tensors with broadcasting and lazy computing
+- [LibRaw/LibRaw](https://github.com/LibRaw/LibRaw) - LibRaw is a library for reading RAW files from digital cameras
+- [niessner/VoxelHashing](https://github.com/niessner/VoxelHashing) - [Siggraph Asia 2013] Large-Scale, Real-Time 3D Reconstruction
+- [tum-vision/fastfusion](https://github.com/tum-vision/fastfusion) - Volumetric 3D Mapping in Real-Time on a CPU
+- [p-ranav/indicators](https://github.com/p-ranav/indicators) - Activity Indicators for Modern C++
+- [lagadic/visp](https://github.com/lagadic/visp) - Open Source Visual Servoing Platform
+- [CloudCompare/CloudCompare](https://github.com/CloudCompare/CloudCompare) - CloudCompare main repository
+- [stevenlovegrove/Sophus](https://github.com/stevenlovegrove/Sophus) - C++ implementation of Lie Groups using Eigen.
+- [structureio/OpenNI2](https://github.com/structureio/OpenNI2) - OpenNI2
+- [mp3guy/Stopwatch](https://github.com/mp3guy/Stopwatch) - Easy to use simple benchmarking tool
+- [mp3guy/ElasticFusion](https://github.com/mp3guy/ElasticFusion) - Real-time dense visual SLAM system
+- [mp3guy/Kintinuous](https://github.com/mp3guy/Kintinuous) - Real-time large scale dense visual SLAM system
+- [mdcnn/Depth-Image-Quality-Enhancement](https://github.com/mdcnn/Depth-Image-Quality-Enhancement) - 
+- [leonzfa/iResNet](https://github.com/leonzfa/iResNet) - 
+- [alicevision/AliceVision](https://github.com/alicevision/AliceVision) - Photogrammetric Computer Vision Framework
+- [puzzlepaint/surfelmeshing](https://github.com/puzzlepaint/surfelmeshing) - Real-time surfel-based mesh reconstruction from RGB-D video.
+- [isl-org/Open3D](https://github.com/isl-org/Open3D) - Open3D: A Modern Library for 3D Data Processing
+- [arpg/vicalib](https://github.com/arpg/vicalib) - Visual-Inertial Calibration Tool
+- [roboception/cvkit](https://github.com/roboception/cvkit) - Computer Vision Toolkit. cvkit is available for Linux as well as for Windows. It offers useful tools for viewing and analyzing images and 3d models.
+- [martinus/robin-hood-hashing](https://github.com/martinus/robin-hood-hashing) - Fast & memory efficient hashtable based on robin hood hashing for C++11/14/17/20
+- [cartographer-project/cartographer](https://github.com/cartographer-project/cartographer) - Cartographer is a system that provides real-time simultaneous localization and mapping (SLAM) in 2D and 3D across multiple platforms and sensor configurations.
+- [gperftools/gperftools](https://github.com/gperftools/gperftools) - Main gperftools repository
+- [dhernandez0/sgm](https://github.com/dhernandez0/sgm) - Semi-Global Matching on the GPU
+- [visionworkbench/visionworkbench](https://github.com/visionworkbench/visionworkbench) - The NASA Vision Workbench is a general purpose image processing and computer vision library developed by the Autonomous Systems and Robotics (ASR) Area in the Intelligent Systems Division at the NASA Ames Research Center.
+- [shichaoy/pop_up_slam](https://github.com/shichaoy/pop_up_slam) - Pop-up SLAM: Semantic Monocular Plane SLAM for Low-texture Environments
+- [NVlabs/intrinsic3d](https://github.com/NVlabs/intrinsic3d) - Intrinsic3D - High-Quality 3D Reconstruction by Joint Appearance and Geometry Optimization with Spatially-Varying Lighting (ICCV 2017)
+- [YuePanEdward/GH-ICP](https://github.com/YuePanEdward/GH-ICP) - GH-ICP: Iterative Closest Point algorithm with global optimal matching and hybrid metric [3DV' 18]
+- [fixstars/libSGM](https://github.com/fixstars/libSGM) - Stereo Semi Global Matching by cuda
+- [danini/magsac](https://github.com/danini/magsac) - The MAGSAC algorithm for robust model fitting without using an inlier-outlier threshold
+- [drsrinathsridhar/GRANSAC](https://github.com/drsrinathsridhar/GRANSAC) - Multi-threaded generic RANSAC implemetation
+- [dthuerck/mapmap_cpu](https://github.com/dthuerck/mapmap_cpu) - A high-performance general-purpose MRF MAP solver, heavily exploiting SIMD instructions.
+- [jshun/ligra](https://github.com/jshun/ligra) - Ligra: A Lightweight Graph Processing Framework for Shared Memory
+- [gunrock/gunrock](https://github.com/gunrock/gunrock) - Programmable CUDA/C++ GPU Graph Analytics
+- [t-taniai/LocalExpStereo](https://github.com/t-taniai/LocalExpStereo) - Continuous 3D Label Stereo Matching using Local Expansion Moves (TPAMI 2018)
+- [carlren/gSLICr](https://github.com/carlren/gSLICr) - gSLICr: Real-time super-pixel segmentation
+- [ahban/gGMMSP-superpixels](https://github.com/ahban/gGMMSP-superpixels) - GMMSP on GPU: a real-time implementation of a high accuracy superpixel algorithm
+- [davidstutz/superpixels-revisited](https://github.com/davidstutz/superpixels-revisited) - Library containing 7 state-of-the-art superpixel algorithms with a total of 9 implementations used for evaluation purposes in [1] utilizing an extended version of the Berkeley Segmentation Benchmark.
+- [nebula-beta/PatchMatch](https://github.com/nebula-beta/PatchMatch) - PathMatch is the state-of-the-art stereo match algorithm framework.
+- [ethz-asl/robust_point_cloud_registration](https://github.com/ethz-asl/robust_point_cloud_registration) - Robust Point Cloud Registration Using Iterative Probabilistic Data Associations ("Robust ICP")
+- [tum-vision/online_photometric_calibration](https://github.com/tum-vision/online_photometric_calibration) - Implementation of online photometric calibration (https://vision.in.tum.de/research/vslam/photometric-calibration)
+- [TingmanYan/SDR](https://github.com/TingmanYan/SDR) - Code for 'Segment-based Disparity Refinement with Occlusion Handling for Stereo Matching'
+- [src-d/lapjv](https://github.com/src-d/lapjv) - Linear Assignmment Problem solver using Jonker-Volgenant algorithm - Python 3 native module.
+- [pytorch/pytorch](https://github.com/pytorch/pytorch) - Tensors and Dynamic neural networks in Python with strong GPU acceleration
+- [opencv/opencv_contrib](https://github.com/opencv/opencv_contrib) - Repository for OpenCV's extra modules
+- [opencv/opencv](https://github.com/opencv/opencv) - Open Source Computer Vision Library
+- [openMVG/openMVG](https://github.com/openMVG/openMVG) - open Multiple View Geometry library. Basis for 3D computer vision and Structure from Motion.
+- [coin-or/Clp](https://github.com/coin-or/Clp) - COIN-OR Linear Programming Solver
+- [gflags/gflags](https://github.com/gflags/gflags) - The gflags package contains a C++ library that implements commandline flags processing. It includes built-in support for standard types such as string and the ability to define flags in the source file in which they are used. Online documentation available at:
+- [lensfun/lensfun](https://github.com/lensfun/lensfun) - The Lensfun project Git repository
+- [PRiME-project/PRiMEStereoMatch](https://github.com/PRiME-project/PRiMEStereoMatch) - A heterogeneous and fully parallel stereo matching algorithm for depth estimation, implementing a local adaptive support weight (ADSW) Guided Image Filter (GIF) cost aggregation stage. Developed in both C++ and OpenCL.
+- [YinlinHu/CPM](https://github.com/YinlinHu/CPM) - CPM-Flow, CVPR 2016
+- [rookiepig/CrossScalePatchMatch](https://github.com/rookiepig/CrossScalePatchMatch) - Cross-Scale Cost Aggregation for Stereo Matching (CVPR 2014 + TCSVT 2015)
+- [facebookarchive/UETorch](https://github.com/facebookarchive/UETorch) - A Torch plugin for Unreal Engine 4.
+- [unrealcv/unrealcv](https://github.com/unrealcv/unrealcv) - UnrealCV: Connecting Computer Vision to Unreal Engine
+- [stevenlovegrove/Pangolin](https://github.com/stevenlovegrove/Pangolin) - Pangolin is a lightweight portable rapid development library for managing OpenGL display / interaction and abstracting video input.
+- [raulmur/ORB_SLAM2](https://github.com/raulmur/ORB_SLAM2) - Real-Time SLAM for Monocular, Stereo and RGB-D Cameras, with Loop Detection and Relocalization Capabilities
+- [ETH3D/badslam](https://github.com/ETH3D/badslam) - Bundle Adjusted Direct RGB-D SLAM
+- [tensorflow/tensorflow](https://github.com/tensorflow/tensorflow) - An Open Source Machine Learning Framework for Everyone
+- [CGAL/cgal](https://github.com/CGAL/cgal) - The public CGAL repository, see the README below
+- [libigl/libigl](https://github.com/libigl/libigl) - Simple C++ geometry processing library.
+- [tumic0/GPXSee](https://github.com/tumic0/GPXSee) - GPS log file viewer and analyzer with support for GPX, TCX, KML, FIT, IGC, NMEA, SLF, SML, LOC, GPI, GeoJSON and OziExplorer files.
+- [vkocheryzhkin/gpujpeg](https://github.com/vkocheryzhkin/gpujpeg) - Mirror JPEG compression and decompression accelerated on GPU
+- [brofield/simpleini](https://github.com/brofield/simpleini) - Cross-platform C++ library providing a simple API to read and write INI-style configuration files
+- [ceres-solver/ceres-solver](https://github.com/ceres-solver/ceres-solver) - A large scale non-linear optimization library
+- [flann-lib/flann](https://github.com/flann-lib/flann) - Fast Library for Approximate Nearest Neighbors
+- [eigenteam/eigen-git-mirror](https://github.com/eigenteam/eigen-git-mirror) - THIS MIRROR IS DEPRECATED -- New url: https://gitlab.com/libeigen/eigen
+- [PointCloudLibrary/pcl](https://github.com/PointCloudLibrary/pcl) - Point Cloud Library (PCL)
+- [kbinani/colormap-shaders](https://github.com/kbinani/colormap-shaders) - A collection of shaders to draw color maps.
+- [ddemidov/mba](https://github.com/ddemidov/mba) - Scattered data interpolation with multilevel B-Splines
+- [thomasmoelhave/TerraNNI](https://github.com/thomasmoelhave/TerraNNI) - TerraNNI interpolates grid DEMs from large 2D and 3D point clouds using a variant of natural neighbor interpolation.
+- [thomasmoelhave/tpie](https://github.com/thomasmoelhave/tpie) - Templated Portable I/O Environment
+- [strasdat/Sophus](https://github.com/strasdat/Sophus) - C++ implementation of Lie Groups using Eigen.
+- [niessner/BundleFusion](https://github.com/niessner/BundleFusion) - [Siggraph 2017] BundleFusion: Real-time Globally Consistent 3D Reconstruction using Online Surface Re-integration
+- [tttamaki/cuda_emicp_softassign](https://github.com/tttamaki/cuda_emicp_softassign) - CUDA-based implementations of Softassign and EM-ICP
+- [mp3guy/ICPCUDA](https://github.com/mp3guy/ICPCUDA) - Super fast implementation of ICP in CUDA for compute capable devices 3.5 or higher
+- [roman-kashitsyn/text-csv](https://github.com/roman-kashitsyn/text-csv) - C++ library for csv manipulations
+- [google/googletest](https://github.com/google/googletest) - GoogleTest - Google Testing and Mocking Framework
+- [apitrace/apitrace](https://github.com/apitrace/apitrace) - Tools for tracing OpenGL, Direct3D, and other graphics APIs
+- [sintefmath/hpmc](https://github.com/sintefmath/hpmc) - HPMC is a small OpenGL/C/C++-library that extractes iso-surfaces of volumetric data directly on the GPU.
+- [cnr-isti-vclab/vcglib](https://github.com/cnr-isti-vclab/vcglib) - The VCGlib is a C++, templated, no dependency, library for manipulation, processing and cleaning of triangle meshes
+- [ddiakopoulos/tinyply](https://github.com/ddiakopoulos/tinyply) - :earth_africa: C++11 ply 3d mesh format importer & exporter
+- [ocornut/imgui](https://github.com/ocornut/imgui) - Dear ImGui: Bloat-free Graphical User interface for C++ with minimal dependencies
+- [lucasb-eyer/pydensecrf](https://github.com/lucasb-eyer/pydensecrf) - Python wrapper to Philipp Krähenbühl's dense (fully connected) CRFs with gaussian edge potentials.
+- [pitzer/SiftGPU](https://github.com/pitzer/SiftGPU) - 
+- [gpufit/Gpufit](https://github.com/gpufit/Gpufit) - GPU-accelerated Levenberg-Marquardt curve fitting in CUDA
+- [cginternals/glbinding](https://github.com/cginternals/glbinding) - A C++ binding for the OpenGL API, generated using the gl.xml specification.
+- [cginternals/globjects](https://github.com/cginternals/globjects) - C++ library strictly wrapping OpenGL objects.
+- [xaf-cv/rgbd-recon](https://github.com/xaf-cv/rgbd-recon) - Real-time 3D-reconstruction from multiple RGBD-sensor streams. Please cite our work when using our software in your own research or publication.
+- [Forceflow/libmorton](https://github.com/Forceflow/libmorton) - C++ header-only library with methods to efficiently encode/decode Morton codes in/from 2D/3D coordinates
+- [Fabi3nn3/lamure](https://github.com/Fabi3nn3/lamure) - LAMURE - C++-library for processing, level-of-detail management and visualization of large data sets. Please cite our work when using our software in your own research or publication.
+- [open-source-parsers/jsoncpp](https://github.com/open-source-parsers/jsoncpp) - A C++ library for interacting with JSON.
+- [bkaradzic/bgfx](https://github.com/bkaradzic/bgfx) - Cross-platform, graphics API agnostic, "Bring Your Own Engine/Framework" style rendering library.
+- [wjakob/nanogui](https://github.com/wjakob/nanogui) - Minimalistic GUI library for OpenGL
+- [mayanklahiri/easyexif](https://github.com/mayanklahiri/easyexif) - Tiny ISO-compliant C++ EXIF parsing library, third-party dependency free.
+- [lballabio/QuantLib](https://github.com/lballabio/QuantLib) - The QuantLib C++ library
+- [GPUOpen-Archive/CodeXL](https://github.com/GPUOpen-Archive/CodeXL) - CodeXL is a comprehensive tool suite that enables developers to harness the benefits of CPUs, GPUs and APUs.
+- [jbeder/yaml-cpp](https://github.com/jbeder/yaml-cpp) - A YAML parser and emitter in C++
 
 ## CSS 
 
-- [reading-list](https://github.com/bamos/reading-list) - My reading list.
+- [bamos/reading-list](https://github.com/bamos/reading-list) - My reading list.
 
 ## Cuda 
 
-- [libSGM](https://github.com/fixstars/libSGM) - Stereo Semi Global Matching by cuda
-- [CuSha](https://github.com/farkhor/CuSha) - CuSha is a CUDA-based vertex-centric graph processing framework that uses G-Shards and CW representations.
-- [gunrock](https://github.com/gunrock/gunrock) - High-Performance Graph Primitives on GPUs
-- [SLIC_CUDA](https://github.com/fderue/SLIC_CUDA) - Superpixel SLIC for GPU (CUDA)
-- [PatchMatchCuda](https://github.com/nebula-beta/PatchMatchCuda) - The PatchMatch stereo match algorithm implemented by CUDA.
-- [mc-cnn](https://github.com/jzbontar/mc-cnn) - Stereo Matching by Training a Convolutional Neural Network to Compare Image Patches
-- [GANet](https://github.com/feihuzhang/GANet) - GA-Net: Guided Aggregation Net for End-to-end Stereo Matching
-- [ACMM](https://github.com/GhiXu/ACMM) - Multi-Scale Geometric Consistency Guided Multi-View Stereo
-- [KinectFusionLib](https://github.com/chrdiller/KinectFusionLib) - Implementation of the KinectFusion approach in modern C++14 and CUDA
-- [EPPM](https://github.com/linchaobao/EPPM) - CUDA implementation of the paper "Fast Edge-Preserving PatchMatch for Large Displacement Optical Flow" in CVPR 2014.
-- [CudaSift](https://github.com/Celebrandil/CudaSift) - A CUDA implementation of SIFT for NVidia GPUs (1.2 ms on a GTX 1060)
+- [NVlabs/instant-ngp](https://github.com/NVlabs/instant-ngp) - Instant neural graphics primitives: lightning fast NeRF and more
+- [facebookresearch/dietgpu](https://github.com/facebookresearch/dietgpu) - GPU implementation of a fast generalized ANS (asymmetric numeral system) entropy encoder and decoder, with extensions for lossless compression of numerical and other data types in HPC/ML applications.
+- [unlimblue/KNN_CUDA](https://github.com/unlimblue/KNN_CUDA) - pytorch knn [cuda version]
+- [farkhor/CuSha](https://github.com/farkhor/CuSha) - CuSha is a CUDA-based vertex-centric graph processing framework that uses G-Shards and CW representations.
+- [fderue/SLIC_CUDA](https://github.com/fderue/SLIC_CUDA) - Superpixel SLIC for GPU (CUDA)
+- [nebula-beta/PatchMatchCuda](https://github.com/nebula-beta/PatchMatchCuda) - The PatchMatch stereo match algorithm implemented by CUDA.
+- [jzbontar/mc-cnn](https://github.com/jzbontar/mc-cnn) - Stereo Matching by Training a Convolutional Neural Network to Compare Image Patches
+- [feihuzhang/GANet](https://github.com/feihuzhang/GANet) - GA-Net: Guided Aggregation Net for End-to-end Stereo Matching
+- [GhiXu/ACMM](https://github.com/GhiXu/ACMM) - Multi-Scale Geometric Consistency Guided Multi-View Stereo
+- [chrdiller/KinectFusionLib](https://github.com/chrdiller/KinectFusionLib) - Implementation of the KinectFusion approach in modern C++14 and CUDA
+- [linchaobao/EPPM](https://github.com/linchaobao/EPPM) - CUDA implementation of the paper "Fast Edge-Preserving PatchMatch for Large Displacement Optical Flow" in CVPR 2014.
+- [Celebrandil/CudaSift](https://github.com/Celebrandil/CudaSift) - A CUDA implementation of SIFT for NVidia GPUs (1.2 ms on a GTX 1060)
+
+## Cython 
+
+- [letmaik/lensfunpy](https://github.com/letmaik/lensfunpy) - 📷 Lens distortion correction for Python, a wrapper for lensfun
+
+## Dockerfile 
+
+- [KopanevPavel/SLAM-Dockers](https://github.com/KopanevPavel/SLAM-Dockers) - Dockerized SOTA SLAM algorithms
 
 ## Fortran 
 
-- [RALFit](https://github.com/ralna/RALFit) - A non-linear least squares solver
+- [ralna/RALFit](https://github.com/ralna/RALFit) - A non-linear least squares solver
 
 ## Go 
 
-- [fzf](https://github.com/junegunn/fzf) - :cherry_blossom: A command-line fuzzy finder
+- [junegunn/fzf](https://github.com/junegunn/fzf) - :cherry_blossom: A command-line fuzzy finder
 
 ## HTML 
 
-- [3dgv.github.io](https://github.com/3dgv/3dgv.github.io) - 
+- [gradio-app/gradio](https://github.com/gradio-app/gradio) - Create UIs for your machine learning model in Python in 3 minutes
+- [alshedivat/al-folio](https://github.com/alshedivat/al-folio) - A beautiful, simple, clean, and responsive Jekyll theme for academics
+- [3dgv/3dgv.github.io](https://github.com/3dgv/3dgv.github.io) - 
+- [FreeCAD/FreeCAD-library](https://github.com/FreeCAD/FreeCAD-library) - A library of Parts for FreeCAD. WARNING - This library is huge. It might take a long time to download and make the addons manager unresponsive for many minutes.
 
 ## Java 
 
-- [Arduino](https://github.com/arduino/Arduino) - open-source electronics platform
-- [jabref](https://github.com/JabRef/jabref) - Graphical Java application for managing BibTeX and biblatex (.bib) databases
-- [apriltag-generation](https://github.com/AprilRobotics/apriltag-generation) - Generate AprilTags in custom layouts
-- [twitter4j](https://github.com/klinker24/twitter4j) - Twitter4J is an open-sourced, mavenized and Google App Engine safe Java library for the Twitter API which is released under the Apache License 2.0.
-- [camerakit-android](https://github.com/CameraKit/camerakit-android) - Library for Android Camera 1 and 2 APIs. Massively increase stability and reliability of photo and video capture on all Android devices.
-- [Backboard](https://github.com/tumblr/Backboard) - A motion-driven animation framework for Android.
-- [Twitter4J](https://github.com/Twitter4J/Twitter4J) - Twitter4J is an open-sourced, mavenized and Google App Engine safe Java library for the Twitter API which is released under the Apache License 2.0.
+- [arduino/Arduino](https://github.com/arduino/Arduino) - Arduino IDE 1.x
+- [JabRef/jabref](https://github.com/JabRef/jabref) - Graphical Java application for managing BibTeX and biblatex (.bib) databases
+- [AprilRobotics/apriltag-generation](https://github.com/AprilRobotics/apriltag-generation) - Generate AprilTags in custom layouts
+- [klinker24/twitter4j](https://github.com/klinker24/twitter4j) - Twitter4J is an open-sourced, mavenized and Google App Engine safe Java library for the Twitter API which is released under the Apache License 2.0.
+- [tumblr/Backboard](https://github.com/tumblr/Backboard) - A motion-driven animation framework for Android.
+- [Twitter4J/Twitter4J](https://github.com/Twitter4J/Twitter4J) - Twitter4J is an open-source Java library for the Twitter API.
 
 ## JavaScript 
 
-- [netron](https://github.com/lutzroeder/netron) - Visualizer for neural network, deep learning, and machine learning models
-- [al-folio](https://github.com/alshedivat/al-folio) - A beautiful, simple, clean, and responsive Jekyll theme for academics
-- [survis](https://github.com/fabian-beck/survis) - Visual Literature Database
-- [awesome-captcha](https://github.com/ZYSzys/awesome-captcha) - :key: Curated list of awesome captcha libraries and crack tools.
-- [svg-radar-chart](https://github.com/derhuerst/svg-radar-chart) - Generate SVG radar charts.
-- [alphavantage](https://github.com/zackurben/alphavantage) - A simple interface to the Alpha Vantage API.
-- [Parsley.js](https://github.com/guillaumepotier/Parsley.js) - Validate your forms, frontend, without writing a single line of javascript
+- [georgegach/flowiz](https://github.com/georgegach/flowiz) - Converts Optical Flow files to images and optionally compiles them to a video. Flow viewer GUI is also available. Check out mockup right from Github Pages:
+- [vega/vega](https://github.com/vega/vega) - A visualization grammar.
+- [lutzroeder/netron](https://github.com/lutzroeder/netron) - Visualizer for neural network, deep learning, and machine learning models
+- [fabian-beck/survis](https://github.com/fabian-beck/survis) - Visual Literature Database
+- [ZYSzys/awesome-captcha](https://github.com/ZYSzys/awesome-captcha) - :key: Curated list of awesome captcha libraries and crack tools.
+- [derhuerst/svg-radar-chart](https://github.com/derhuerst/svg-radar-chart) - Generate SVG radar charts.
+- [zackurben/alphavantage](https://github.com/zackurben/alphavantage) - A simple interface to the Alpha Vantage API.
+- [guillaumepotier/Parsley.js](https://github.com/guillaumepotier/Parsley.js) - Validate your forms, frontend, without writing a single line of javascript
 
 ## Jupyter Notebook 
 
-- [census-transform-pytorch](https://github.com/mlaves/census-transform-pytorch) - Implementation of the non-parametric census transform as PyTorch layer.
-- [nerf](https://github.com/bmild/nerf) - Code release for NeRF (Neural Radiance Fields)
-- [gans](https://github.com/diegoalejogm/gans) - Generative Adversarial Networks implemented in PyTorch and Tensorflow
-- [SemanticSegmentation_DL](https://github.com/tangzhenyu/SemanticSegmentation_DL) - Resources of semantic segmantation based on Deep Learning model
-- [fastai](https://github.com/fastai/fastai) - The fastai deep learning library
+- [rpautrat/SuperPoint](https://github.com/rpautrat/SuperPoint) - Efficient neural feature detector and descriptor
+- [colour-science/colour-checker-detection](https://github.com/colour-science/colour-checker-detection) - Colour checker detection with Python
+- [szagoruyko/pytorchviz](https://github.com/szagoruyko/pytorchviz) - A small package to create visualizations of PyTorch execution graphs
+- [vbalnt/tfeat](https://github.com/vbalnt/tfeat) - TFeat descriptor models for BMVC 2016 paper "Learning local feature descriptors with triplets and shallow convolutional neural networks"
+- [ubc-vision/image-matching-benchmark-baselines](https://github.com/ubc-vision/image-matching-benchmark-baselines) - Baselines for the Image Matching Benchmark and Challenge
+- [ubc-vision/image-matching-benchmark](https://github.com/ubc-vision/image-matching-benchmark) - Public release of the Image Matching Benchmark: https://image-matching-challenge.github.io
+- [vcg-uvic/image-matching-benchmark](https://github.com/vcg-uvic/image-matching-benchmark) - Public release of the Image Matching Benchmark: https://vision.uvic.ca/image-matching-challenge
+- [gengshan-y/VCN](https://github.com/gengshan-y/VCN) - Volumetric Correspondence Networks for Optical Flow, NeurIPS 2019.
+- [src-d/kmcuda](https://github.com/src-d/kmcuda) - Large scale K-means and K-nn implementation on NVIDIA GPU / CUDA
+- [bodono/scs-python](https://github.com/bodono/scs-python) - Python interface for SCS
+- [hufu6371/DORN](https://github.com/hufu6371/DORN) - 
+- [mlaves/census-transform-pytorch](https://github.com/mlaves/census-transform-pytorch) - Implementation of the non-parametric census transform as PyTorch layer.
+- [skorch-dev/skorch](https://github.com/skorch-dev/skorch) - A scikit-learn compatible neural network library that wraps PyTorch
+- [bmild/nerf](https://github.com/bmild/nerf) - Code release for NeRF (Neural Radiance Fields)
+- [david-m-rosen/SE-Sync](https://github.com/david-m-rosen/SE-Sync) - An implementation of the SE-Sync algorithm for synchronization over the special Euclidean group.
+- [diegoalejogm/gans](https://github.com/diegoalejogm/gans) - Generative Adversarial Networks implemented in PyTorch and Tensorflow
+- [tangzhenyu/SemanticSegmentation_DL](https://github.com/tangzhenyu/SemanticSegmentation_DL) - Resources of semantic segmantation based on Deep Learning model
+- [fastai/fastai](https://github.com/fastai/fastai) - The fastai deep learning library
+- [tensorflow/models](https://github.com/tensorflow/models) - Models and examples built with TensorFlow
 
 ## Kotlin 
 
-- [Flym](https://github.com/FredJul/Flym) - Flym News Reader is a light Android feed reader (RSS/Atom)
+- [FredJul/Flym](https://github.com/FredJul/Flym) - Flym News Reader is a light Android feed reader (RSS/Atom)
 
 ## Lua 
 
-- [ResNeXt](https://github.com/facebookresearch/ResNeXt) - Implementation of a classification framework from the paper Aggregated Residual Transformations for Deep Neural Networks
-- [deepdesc-release](https://github.com/etrulls/deepdesc-release) - Code for the ICCV 2015 paper "Discriminative Learning of Deep Convolutional Feature Point Descriptors"
-- [torch-autograd](https://github.com/twitter/torch-autograd) - Autograd automatically differentiates native Torch code
-- [neural-style](https://github.com/jcjohnson/neural-style) - Torch implementation of neural style algorithm
-- [vulscan](https://github.com/scipag/vulscan) - Advanced vulnerability scanning with Nmap NSE
+- [facebookresearch/ResNeXt](https://github.com/facebookresearch/ResNeXt) - Implementation of a classification framework from the paper Aggregated Residual Transformations for Deep Neural Networks
+- [etrulls/deepdesc-release](https://github.com/etrulls/deepdesc-release) - Code for the ICCV 2015 paper "Discriminative Learning of Deep Convolutional Feature Point Descriptors"
+- [twitter-archive/torch-autograd](https://github.com/twitter-archive/torch-autograd) - Autograd automatically differentiates native Torch code
+- [jcjohnson/neural-style](https://github.com/jcjohnson/neural-style) - Torch implementation of neural style algorithm
+- [scipag/vulscan](https://github.com/scipag/vulscan) - Advanced vulnerability scanning with Nmap NSE
 
 ## MATLAB 
 
-- [CDCS](https://github.com/oxfordcontrol/CDCS) - An open-source MATLAB® ADMM solver for partially decomposable conic optimization programs.
-- [low-light-image-enhancement-resources](https://github.com/dawnlh/low-light-image-enhancement-resources) - This is a resouce list for low light image enhancement
-- [single-shot-pro-cam-calib](https://github.com/BingyaoHuang/single-shot-pro-cam-calib) - [IEEE T-ASE 2020] A Fast and Flexible Projector-Camera Calibration System
-- [gptoolbox](https://github.com/alecjacobson/gptoolbox) - Matlab toolbox for Geometry Processing.
-- [sidd-ground-truth-image-estimation](https://github.com/AbdoKamel/sidd-ground-truth-image-estimation) - Ground truth image estimation used for the Smartphone Image Denoising Dataset (SIDD)
+- [karaimer/camera-pipeline-nonUI](https://github.com/karaimer/camera-pipeline-nonUI) - Non-UI implementation of **camera-pipeline-UI**.
+- [karaimer/camera-pipeline-UI](https://github.com/karaimer/camera-pipeline-UI) - 
+- [lenck/vlb-deteval](https://github.com/lenck/vlb-deteval) - Comprehensive detector evaluation of local feature detectors
+- [hpatches/hpatches-benchmark](https://github.com/hpatches/hpatches-benchmark) - Python & Matlab code for local feature descriptor evaluation with the HPatches dataset.
+- [oxfordcontrol/CDCS](https://github.com/oxfordcontrol/CDCS) - An open-source MATLAB® ADMM solver for partially decomposable conic optimization programs.
+- [dawnlh/awesome-low-light-image-enhancement](https://github.com/dawnlh/awesome-low-light-image-enhancement) - This is a resouce list for low light image enhancement
+- [BingyaoHuang/single-shot-pro-cam-calib](https://github.com/BingyaoHuang/single-shot-pro-cam-calib) - [TASE & ISMAR'18] A Fast and Flexible Projector-Camera Calibration System
+- [alecjacobson/gptoolbox](https://github.com/alecjacobson/gptoolbox) - Matlab toolbox for Geometry Processing.
+- [AbdoKamel/sidd-ground-truth-image-estimation](https://github.com/AbdoKamel/sidd-ground-truth-image-estimation) - Ground truth image estimation used for the Smartphone Image Denoising Dataset (SIDD)
 
 ## Matlab 
 
-- [HiFST](https://github.com/isalirezag/HiFST) - Spatially-Varying  Blur Detection Based on Multiscale Fused and Sorted Transform Coefficients of Gradient Magnitudes
-- [rcnn](https://github.com/rbgirshick/rcnn) - R-CNN: Regions with Convolutional Neural Network Features
+- [pdollar/edges](https://github.com/pdollar/edges) - Structured Edge Detection Toolbox
+- [pdollar/toolbox](https://github.com/pdollar/toolbox) - Piotr's Image & Video Matlab Toolbox
+- [ahojnnes/local-feature-evaluation](https://github.com/ahojnnes/local-feature-evaluation) - Comparative Evaluation of Hand-Crafted and Learned Local Features
+- [vlfeat/vlbenchmarks](https://github.com/vlfeat/vlbenchmarks) - VLBenchmark is a MATLAB suite of benchmarks for computer vision features
+- [isalirezag/HiFST](https://github.com/isalirezag/HiFST) - Spatially-Varying  Blur Detection Based on Multiscale Fused and Sorted Transform Coefficients of Gradient Magnitudes
+- [rbgirshick/rcnn](https://github.com/rbgirshick/rcnn) - R-CNN: Regions with Convolutional Neural Network Features
 
 ## Others 
 
-- [Awesome-People-in-Computer-Vision](https://github.com/solarlee/Awesome-People-in-Computer-Vision) - 
-- [naming-cheatsheet](https://github.com/kettanaito/naming-cheatsheet) - Comprehensive language-agnostic guidelines on variables naming. Home of the A/HC/LC pattern.
-- [Visualize-Optimization-Algorithms](https://github.com/jiupinjia/Visualize-Optimization-Algorithms) - Visualization of some well-know numerical optimization methods
-- [awesome-holistic-3d](https://github.com/holistic-3d/awesome-holistic-3d) - A list of papers and resources (data,code,etc) for holistic 3D reconstruction in computer vision
-- [Kimera](https://github.com/MIT-SPARK/Kimera) - Index repo for Kimera code
-- [3D-Machine-Learning](https://github.com/timzhang642/3D-Machine-Learning) - A resource repository for 3D machine learning
-- [apriltag-imgs](https://github.com/AprilRobotics/apriltag-imgs) - Pre-generated AprilTag images
-- [awesome-point-cloud-processing](https://github.com/mmolero/awesome-point-cloud-processing) - A curated list of awesome Point Cloud Processing Resources, Libraries, Software
-- [awesome-public-datasets](https://github.com/awesomedata/awesome-public-datasets) - A topic-centric list of HQ open datasets.
-- [awesome-point-cloud-analysis](https://github.com/Yochengliu/awesome-point-cloud-analysis) - A list of papers and datasets about point cloud analysis (processing)
-- [awesome-satellite-imagery-datasets](https://github.com/chrieke/awesome-satellite-imagery-datasets) - 🛰️ List of satellite image training datasets with annotations for computer vision and deep learning
-- [awesome-computer-vision](https://github.com/jbhuang0604/awesome-computer-vision) - A curated list of awesome computer vision resources
-- [Machine-Learning-Links-And-Lessons-Learned](https://github.com/adeshpande3/Machine-Learning-Links-And-Lessons-Learned) - List of all the lessons learned, best practices, and links from my time studying machine learning
-- [awesome](https://github.com/sindresorhus/awesome) - 😎 Awesome lists about all kinds of interesting topics
-- [single_file_libs](https://github.com/nothings/single_file_libs) - List of single-file C/C++ libraries.
-- [simple-world-map](https://github.com/flekschas/simple-world-map) - A simple SVG world map with ISO 3166-1 annotations
-- [cuda-linear-algebra](https://github.com/balewski/cuda-linear-algebra) - NVIDIA GPU  computing power is unlocked by C-code and used to solve matrix equation AX=B using conjugate gradient method. User can select one of the following  execution modes: pure CPU, BLAS(CPU), CUBLAS(GPU), mixed (CPU & GPU)
-- [awesome-opengl](https://github.com/eug/awesome-opengl) - A curated list of awesome OpenGL libraries, debuggers and resources.
-- [awesome_3DReconstruction_list](https://github.com/openMVG/awesome_3DReconstruction_list) - A curated list of papers & resources linked to 3D reconstruction from images.
+- [subeeshvasu/Awesome-Deblurring](https://github.com/subeeshvasu/Awesome-Deblurring) - A curated list of resources for Image and Video Deblurring
+- [shamangary/awesome-local-global-descriptor](https://github.com/shamangary/awesome-local-global-descriptor) - My personal note about local and global descriptor
+- [hpatches/hpatches-dataset](https://github.com/hpatches/hpatches-dataset) - HPatches: Homography-patches dataset.
+- [solarlee/Awesome-People-in-Computer-Vision](https://github.com/solarlee/Awesome-People-in-Computer-Vision) - 
+- [kettanaito/naming-cheatsheet](https://github.com/kettanaito/naming-cheatsheet) - Comprehensive language-agnostic guidelines on variables naming. Home of the A/HC/LC pattern.
+- [jiupinjia/Visualize-Optimization-Algorithms](https://github.com/jiupinjia/Visualize-Optimization-Algorithms) - Visualization of numerical optimization algorithms
+- [holistic-3d/awesome-holistic-3d](https://github.com/holistic-3d/awesome-holistic-3d) - A list of papers and resources (data,code,etc) for holistic 3D reconstruction in computer vision
+- [MIT-SPARK/Kimera](https://github.com/MIT-SPARK/Kimera) - Index repo for Kimera code
+- [timzhang642/3D-Machine-Learning](https://github.com/timzhang642/3D-Machine-Learning) - A resource repository for 3D machine learning
+- [AprilRobotics/apriltag-imgs](https://github.com/AprilRobotics/apriltag-imgs) - Pre-generated AprilTag images
+- [mmolero/awesome-point-cloud-processing](https://github.com/mmolero/awesome-point-cloud-processing) - A curated list of awesome Point Cloud Processing Resources, Libraries, Software
+- [awesomedata/awesome-public-datasets](https://github.com/awesomedata/awesome-public-datasets) - A topic-centric list of HQ open datasets.
+- [Yochengliu/awesome-point-cloud-analysis](https://github.com/Yochengliu/awesome-point-cloud-analysis) - A list of papers and datasets about point cloud analysis (processing)
+- [chrieke/awesome-satellite-imagery-datasets](https://github.com/chrieke/awesome-satellite-imagery-datasets) - 🛰️ List of satellite image training datasets with annotations for computer vision and deep learning
+- [jbhuang0604/awesome-computer-vision](https://github.com/jbhuang0604/awesome-computer-vision) - A curated list of awesome computer vision resources
+- [adeshpande3/Machine-Learning-Links-And-Lessons-Learned](https://github.com/adeshpande3/Machine-Learning-Links-And-Lessons-Learned) - List of all the lessons learned, best practices, and links from my time studying machine learning
+- [sindresorhus/awesome](https://github.com/sindresorhus/awesome) - 😎 Awesome lists about all kinds of interesting topics
+- [nothings/single_file_libs](https://github.com/nothings/single_file_libs) - List of single-file C/C++ libraries.
+- [flekschas/simple-world-map](https://github.com/flekschas/simple-world-map) - A simple SVG world map with ISO 3166-1 annotations
+- [eug/awesome-opengl](https://github.com/eug/awesome-opengl) - A curated list of awesome OpenGL libraries, debuggers and resources.
+- [openMVG/awesome_3DReconstruction_list](https://github.com/openMVG/awesome_3DReconstruction_list) - A curated list of papers & resources linked to 3D reconstruction from images.
 
 ## PHP 
 
-- [Captcha](https://github.com/Gregwar/Captcha) - PHP Captcha library
-- [Open.GL](https://github.com/Overv/Open.GL) - The source code and content of Open.GL.
+- [Gregwar/Captcha](https://github.com/Gregwar/Captcha) - PHP Captcha library
+- [Overv/Open.GL](https://github.com/Overv/Open.GL) - The source code and content of Open.GL.
 
 ## Python 
 
-- [ncpol2sdpa](https://github.com/peterwittek/ncpol2sdpa) - Solve global polynomial optimization problems of either commutative variables or noncommutative operators through a semidefinite programming (SDP) relaxation
-- [albumentations](https://github.com/albumentations-team/albumentations) - Fast image augmentation library and easy to use wrapper around other libraries. Documentation:  https://albumentations.ai/docs/ Paper about library: https://www.mdpi.com/2078-2489/11/2/125
-- [imgaug](https://github.com/aleju/imgaug) - Image augmentation for machine learning experiments.
-- [gradslam](https://github.com/gradslam/gradslam) - gradslam is an open source differentiable dense SLAM library for PyTorch
-- [NeuralTracking](https://github.com/DeformableFriends/NeuralTracking) - Official implementation for the NeurIPS 2020 paper Neural Non-Rigid Tracking.
-- [guildai](https://github.com/guildai/guildai) - Experiment tracking, ML developer tools
-- [protobuf-inspector](https://github.com/mildsunrise/protobuf-inspector) - 🕵️ Tool to reverse-engineer Protocol Buffers with unknown definition
-- [tbparser](https://github.com/velikodniy/tbparser) - A parser of Tensorboard logs
-- [tqdm](https://github.com/tqdm/tqdm) - A Fast, Extensible Progress Bar for Python and CLI
-- [skorch](https://github.com/skorch-dev/skorch) - A scikit-learn compatible neural network library that wraps PyTorch
-- [Pytorch-UNet](https://github.com/milesial/Pytorch-UNet) - PyTorch implementation of the U-Net for image semantic segmentation with high quality images
-- [pykitti](https://github.com/utiasSTARS/pykitti) - Python tools for working with KITTI data.
-- [pytorch-template](https://github.com/victoresque/pytorch-template) - PyTorch deep learning projects made easy.
-- [bokeh](https://github.com/bokeh/bokeh) - Interactive Data Visualization in the browser, from  Python
-- [PyTorch-VAE](https://github.com/AntixK/PyTorch-VAE) - A Collection of Variational Autoencoders (VAE) in PyTorch.
-- [ToDayGAN](https://github.com/AAnoosheh/ToDayGAN) - 
-- [EDSR-PyTorch](https://github.com/sanghyun-son/EDSR-PyTorch) - PyTorch version of the paper 'Enhanced Deep Residual Networks for Single Image Super-Resolution' (CVPRW 2017)
-- [ELD](https://github.com/Vandermode/ELD) - A Physics-based Noise Formation Model for Extreme Low-light Raw Denoising (CVPR 2020 - Oral)
-- [pyrender](https://github.com/mmatl/pyrender) - Easy-to-use glTF 2.0-compliant OpenGL renderer for visualization of 3D scenes.
-- [docopt](https://github.com/docopt/docopt) - Pythonic command line arguments parser, that will make you smile
-- [thefuck](https://github.com/nvbn/thefuck) - Magnificent app which corrects your previous console command.
-- [point2mesh](https://github.com/ranahanocka/point2mesh) - Reconstruct Watertight Meshes from Point Clouds [SIGGRAPH 2020]
-- [metashape](https://github.com/ucdavis/metashape) - Easy, reproducible Metashape photogrammetry workflows
-- [metashape-scripts](https://github.com/agisoft-llc/metashape-scripts) - Python scripts for Metashape (former PhotoScan)
-- [streamlit](https://github.com/streamlit/streamlit) - Streamlit — The fastest way to build data apps in Python
-- [TENet](https://github.com/guochengqian/TENet) - Official Pytorch Implementation for Trinity of Pixel Enhancement: a Joint Solution for Demosaicing, Denoising and Super-Resolution
-- [starred](https://github.com/maguowei/starred) - creating your own Awesome List by GitHub stars!
-- [BlurDetection](https://github.com/whdcumt/BlurDetection) - A Python-Based Blur Detector using Fast Fourier Transforms
-- [blur_detection](https://github.com/fled/blur_detection) - Blurred Region Detection using Singular Value Decomposition (SVD)
-- [tf-lift](https://github.com/cvlab-epfl/tf-lift) - Tensorflow port of LIFT (ECCV 2016), with training code.
-- [pytorch3d](https://github.com/facebookresearch/pytorch3d) - PyTorch3D is FAIR's library of reusable components for deep learning with 3D data
-- [detectron2](https://github.com/facebookresearch/detectron2) - Detectron2 is FAIR's next-generation platform for object detection and segmentation.
-- [Detectron](https://github.com/facebookresearch/Detectron) - FAIR's research platform for object detection research, implementing popular algorithms like Mask R-CNN and RetinaNet.
-- [py-faster-rcnn](https://github.com/rbgirshick/py-faster-rcnn) - Faster R-CNN (Python implementation) -- see https://github.com/ShaoqingRen/faster_rcnn for the official MATLAB version
-- [LIFT](https://github.com/cvlab-epfl/LIFT) - Code release for the ECCV 2016 paper
-- [researchlei](https://github.com/karpathy/researchlei) - An Academic Papers Management and Discovery System
-- [certifiable-calibration](https://github.com/utiasSTARS/certifiable-calibration) - Certifiably globally optimal extrinsic calibration for sensors providing egomotion estimates.
-- [meteornet](https://github.com/xingyul/meteornet) - MeteorNet: Deep Learning on Dynamic 3D Point Cloud Sequences (ICCV 2019 Oral)
-- [SoftRas](https://github.com/ShichenLiu/SoftRas) - Project page of paper "Soft Rasterizer: A Differentiable Renderer for Image-based 3D Reasoning"
-- [gpt-2](https://github.com/openai/gpt-2) - Code for the paper "Language Models are Unsupervised Multitask Learners"
-- [stereo-magnification](https://github.com/google/stereo-magnification) - Code accompanying the SIGGRAPH 2018 paper "Stereo Magnification: Learning View Synthesis using Multiplane Images"
-- [octconv.pytorch](https://github.com/d-li14/octconv.pytorch) - PyTorch implementation of Octave Convolution with pre-trained Oct-ResNet and Oct-MobileNet models
-- [OctConv](https://github.com/facebookresearch/OctConv) - Code for paper
-- [hfnet](https://github.com/ethz-asl/hfnet) - From Coarse to Fine: Robust Hierarchical Localization at Large Scale with HF-Net (https://arxiv.org/abs/1812.03506)
-- [StereoNet-ActiveStereoNet](https://github.com/meteorshowers/StereoNet-ActiveStereoNet) - stereo matching    StereoNet: Guided Hierarchical Refinement for Real-Time Edge-Aware Depth prediction model in pytorch. ECCV2018;                                                                   ActiveStereoNet:End-to-End Self-Supervised Learning for Active Stereo Systems ECCV2018 Oral
-- [the-gan-zoo](https://github.com/hindupuravinash/the-gan-zoo) - A list of all named GANs!
-- [bitswap](https://github.com/fhkingma/bitswap) - Bit-Swap: Recursive Bits-Back Coding for Lossless Compression with Hierarchical Latent Variables
-- [pyzmq](https://github.com/zeromq/pyzmq) - PyZMQ:  Python bindings for zeromq
-- [chainercv](https://github.com/chainer/chainercv) - ChainerCV: a Library for Deep Learning in Computer Vision
-- [lap](https://github.com/gatagat/lap) - Linear Assignment Problem solver (LAPJV/LAPMOD).
-- [autograd](https://github.com/HIPS/autograd) - Efficiently computes derivatives of numpy code.
-- [netdef_models](https://github.com/lmb-freiburg/netdef_models) - Repository for different network models related to flow/disparity (ECCV 18)
-- [PSMNet](https://github.com/JiaRenChang/PSMNet) - Pyramid Stereo Matching Network (CVPR2018)
-- [high-res-stereo](https://github.com/gengshan-y/high-res-stereo) - Hierarchical Deep Stereo Matching on High Resolution Images, CVPR 2019.
-- [hd3](https://github.com/ucbdrive/hd3) - Code for Hierarchical Discrete Distribution Decomposition for Match Density Estimation (CVPR 2019)
-- [GwcNet](https://github.com/xy-guo/GwcNet) - Group-wise Correlation Stereo Network, CVPR 2019
-- [lensfunpy](https://github.com/letmaik/lensfunpy) - 📷 Lens distortion correction for Python, a wrapper for lensfun
-- [ODM](https://github.com/OpenDroneMap/ODM) - A command line toolkit to generate maps, point clouds, 3D models and DEMs from drone, balloon or kite images. 📷
-- [ShutTUM](https://github.com/gollth/ShutTUM) - A photometrically calibrated multi-shutter stereo dataset for benchmarking visual odometry algorithms.
-- [prophet](https://github.com/facebook/prophet) - Tool for producing high quality forecasts for time series data that has multiple seasonality with linear or non-linear growth.
-- [Solid](https://github.com/100/Solid) - 🎯 A comprehensive gradient-free optimization framework written in Python
-- [chainer](https://github.com/chainer/chainer) - A flexible framework of neural networks for deep learning
-- [nevergrad](https://github.com/facebookresearch/nevergrad) - A Python toolbox for performing gradient-free optimization
-- [tensor-fsmn](https://github.com/katsugeneration/tensor-fsmn) - Feedforward Sequential Memory Networks (FSMN) implemented by tensorflow
-- [deep-rl-tensorflow](https://github.com/carpedm20/deep-rl-tensorflow) - TensorFlow implementation of Deep Reinforcement Learning papers
-- [DQN-tensorflow](https://github.com/devsisters/DQN-tensorflow) - Tensorflow implementation of Human-Level Control through Deep Reinforcement Learning
-- [models](https://github.com/tensorflow/models) - Models and examples built with TensorFlow
-- [spatial-transformer-network](https://github.com/kevinzakka/spatial-transformer-network) - A Tensorflow implementation of Spatial Transformer Networks.
-- [PyTorch-GAN](https://github.com/eriklindernoren/PyTorch-GAN) - PyTorch implementations of Generative Adversarial Networks.
-- [Keras-GAN](https://github.com/eriklindernoren/Keras-GAN) - Keras implementations of Generative Adversarial Networks.
-- [keras-vis](https://github.com/raghakot/keras-vis) - Neural network visualization toolkit for keras
-- [tensorflow-MNIST-GAN-DCGAN](https://github.com/znxlwm/tensorflow-MNIST-GAN-DCGAN) - Tensorflow implementation of Generative Adversarial Networks (GAN) and Deep Convolutional Generative Adversarial Netwokrs for MNIST dataset.
-- [GAN-MNIST](https://github.com/yihui-he/GAN-MNIST) - Generative Adversarial Network for MNIST with tensorflow
-- [progressive_growing_of_gans](https://github.com/tkarras/progressive_growing_of_gans) - Progressive Growing of GANs for Improved Quality, Stability, and Variation
-- [Stop-motion-OBJ](https://github.com/neverhood311/Stop-motion-OBJ) - A Blender add-on for importing a sequence of OBJ meshes as frames
-- [python-plyfile](https://github.com/dranjan/python-plyfile) - NumPy-based text/binary PLY file reader/writer for Python
-- [cat](https://github.com/zhanxw/cat) - Arnold Cat
-- [shirts](https://github.com/joelgrus/shirts) - T-Shirts, Feminism, Parenting, and Data Science
-- [Eigenstyle](https://github.com/graceavery/Eigenstyle) - Principal Component Analysis and Fashion
+- [google-research/multinerf](https://github.com/google-research/multinerf) - A Code Release for Mip-NeRF 360, Ref-NeRF, and RawNeRF
+- [nerfstudio-project/nerfstudio](https://github.com/nerfstudio-project/nerfstudio) - A collaboration friendly studio for NeRFs
+- [google-research/arxiv-latex-cleaner](https://github.com/google-research/arxiv-latex-cleaner) - arXiv LaTeX Cleaner: Easily clean the LaTeX code of your paper to submit to arXiv
+- [CNES/Pandora](https://github.com/CNES/Pandora) - A stereo matching framework that will help you design your stereo matching pipeline with state of the art performances.
+- [CNES/Pandora_MCCNN](https://github.com/CNES/Pandora_MCCNN) - 
+- [colour-science/colour](https://github.com/colour-science/colour) - Colour Science for Python
+- [gpleiss/temperature_scaling](https://github.com/gpleiss/temperature_scaling) - A simple way to calibrate your neural network.
+- [open-mmlab/mmflow](https://github.com/open-mmlab/mmflow) - OpenMMLab optical flow toolbox and benchmark
+- [lanpa/tensorboardX](https://github.com/lanpa/tensorboardX) - tensorboard for pytorch (and chainer, mxnet, numpy, ...)
+- [diegoroyo/flowvid](https://github.com/diegoroyo/flowvid) - Understand what's happening in an optical flow video with simple visualizations - pip install flowvid
+- [naver/kapture](https://github.com/naver/kapture) - kapture is a file format as well as a set of tools for manipulating datasets, and in particular Visual Localization and Structure from Motion data.
+- [menpo/cyvlfeat](https://github.com/menpo/cyvlfeat) - A thin Cython wrapper around select areas of vlfeat
+- [photosynthesis-team/piq](https://github.com/photosynthesis-team/piq) - Measures and metrics for image2image tasks. PyTorch.
+- [adrn/schwimmbad](https://github.com/adrn/schwimmbad) - A common interface to processing pools.
+- [IDSIA/sacred](https://github.com/IDSIA/sacred) - Sacred is a tool to help you configure, organize, log and reproduce experiments developed at IDSIA.
+- [KevinMusgrave/pytorch-metric-learning](https://github.com/KevinMusgrave/pytorch-metric-learning) - The easiest way to use deep metric learning in your application. Modular, flexible, and extensible. Written in PyTorch.
+- [andreaskoepf/mlp-hidden-visu](https://github.com/andreaskoepf/mlp-hidden-visu) - Visualization of hidden layer activations of small multilayer perceptrons (MLPs)
+- [TylerYep/torchinfo](https://github.com/TylerYep/torchinfo) - View model summaries in PyTorch!
+- [yuruntian/HyNet](https://github.com/yuruntian/HyNet) - 
+- [magicleap/SuperPointPretrainedNetwork](https://github.com/magicleap/SuperPointPretrainedNetwork) - PyTorch pre-trained model for real-time interest point detection, description, and sparse tracking (https://arxiv.org/abs/1712.07629)
+- [ColumbiaDVMM/Spread-out_Local_Feature_Descriptor](https://github.com/ColumbiaDVMM/Spread-out_Local_Feature_Descriptor) - Code for Learning Spread-out Local Feature Descriptors
+- [ducha-aiki/affnet](https://github.com/ducha-aiki/affnet) - Code and weights for local  feature affine shape estimation paper "Repeatability Is Not Enough: Learning Discriminative Affine Regions via Discriminability"
+- [DagnyT/hardnet](https://github.com/DagnyT/hardnet) - Hardnet descriptor model - "Working hard to know your neighbor's margins:  Local descriptor learning loss"
+- [lmcinnes/umap](https://github.com/lmcinnes/umap) - Uniform Manifold Approximation and Projection
+- [LeviBorodenko/spectrographic](https://github.com/LeviBorodenko/spectrographic) - Turn an image into sound whose spectrogram looks like the image.
+- [numba/numba](https://github.com/numba/numba) - NumPy aware dynamic Python compiler using LLVM
+- [pyodide/pyodide](https://github.com/pyodide/pyodide) - Pyodide is a Python distribution for the browser and Node.js based on WebAssembly
+- [sbadirli/GrowNet](https://github.com/sbadirli/GrowNet) - 
+- [kornia/kornia](https://github.com/kornia/kornia) - Open Source Differentiable Computer Vision Library
+- [TorchEnsemble-Community/Ensemble-Pytorch](https://github.com/TorchEnsemble-Community/Ensemble-Pytorch) - A unified ensemble framework for PyTorch to improve the performance and robustness of your deep learning model.
+- [martinResearch/DEODR](https://github.com/martinResearch/DEODR) - A differentiable 3D renderer with Pytorch, Tensorflow and Matlab interfaces
+- [magicleap/SuperGluePretrainedNetwork](https://github.com/magicleap/SuperGluePretrainedNetwork) - SuperGlue: Learning Feature Matching with Graph Neural Networks (CVPR 2020, Oral)
+- [NVlabs/learningrigidity](https://github.com/NVlabs/learningrigidity) - Learning Rigidity in Dynamic Scenes with a Moving Camera for 3D Motion Field Estimation (ECCV 2018)
+- [statsmodels/statsmodels](https://github.com/statsmodels/statsmodels) - Statsmodels: statistical modeling and econometrics in Python
+- [hanxf/matchnet](https://github.com/hanxf/matchnet) - 
+- [JiahuiYu/slimmable_networks](https://github.com/JiahuiYu/slimmable_networks) - Slimmable Networks, AutoSlim, and Beyond, ICLR 2019, and ICCV 2019
+- [facebookresearch/FixRes](https://github.com/facebookresearch/FixRes) - This repository reproduces the results of the paper: "Fixing the train-test resolution discrepancy" https://arxiv.org/abs/1906.06423
+- [lukemelas/EfficientNet-PyTorch](https://github.com/lukemelas/EfficientNet-PyTorch) - A PyTorch implementation of EfficientNet and EfficientNetV2 (coming soon!)
+- [kekmodel/MPL-pytorch](https://github.com/kekmodel/MPL-pytorch) - Unofficial PyTorch implementation of "Meta Pseudo Labels"
+- [NVIDIA/apex](https://github.com/NVIDIA/apex) - A PyTorch Extension:  Tools for easy mixed precision and distributed training in Pytorch
+- [Delgan/loguru](https://github.com/Delgan/loguru) - Python logging made (stupidly) simple
+- [jacobgil/pytorch-grad-cam](https://github.com/jacobgil/pytorch-grad-cam) - Advanced AI Explainability for computer vision.  Support for CNNs, Vision Transformers, Classification, Object detection, Segmentation, Image similarity and more.
+- [Spenhouet/tensorboard-aggregator](https://github.com/Spenhouet/tensorboard-aggregator) - Aggregate multiple tensorboard runs to new summary or csv files
+- [janosh/tensorboard-reducer](https://github.com/janosh/tensorboard-reducer) - Reduce multiple PyTorch TensorBoard runs to new event (or CSV) files.
+- [B1ueber2y/DIST-Renderer](https://github.com/B1ueber2y/DIST-Renderer) - DIST: Rendering Deep Implicit Signed Distance Function with Differentiable Sphere Tracing (CVPR 2020).
+- [public-apis/public-apis](https://github.com/public-apis/public-apis) - A collective list of free APIs
+- [arogozhnikov/einops](https://github.com/arogozhnikov/einops) - Deep learning operations reinvented (for pytorch, tensorflow, jax and others)
+- [yzxing87/Invertible-ISP](https://github.com/yzxing87/Invertible-ISP) - [CVPR2021] Invertible Image Signal Processing
+- [ppliuboy/SelFlow](https://github.com/ppliuboy/SelFlow) - SelFlow: Self-Supervised Learning of Optical Flow
+- [microsoft/MaskFlownet](https://github.com/microsoft/MaskFlownet) - [CVPR 2020, Oral] MaskFlownet: Asymmetric Feature Matching with Learnable Occlusion Mask
+- [pgodet/star_flow](https://github.com/pgodet/star_flow) - STaRFlow: A SpatioTemporal Recurrent Cell for Lightweight Multi-Frame Optical Flow Estimation
+- [abdo-eldesokey/RAFT-NCUP](https://github.com/abdo-eldesokey/RAFT-NCUP) - The official PyTorch implementation for "Normalized Convolution Upsampling for Refined Optical Flow Estimation"
+- [crflynn/stochastic](https://github.com/crflynn/stochastic) - Generate realizations of stochastic processes in python.
+- [jsvine/spectra](https://github.com/jsvine/spectra) - Easy color scales and color conversion for Python.
+- [sksq96/pytorch-summary](https://github.com/sksq96/pytorch-summary) - Model summary in PyTorch similar to `model.summary()` in Keras
+- [BlackHC/toma](https://github.com/BlackHC/toma) - Helps you write algorithms in PyTorch that adapt to the available (CUDA) memory
+- [ray-project/ray](https://github.com/ray-project/ray) - Ray is a unified framework for scaling AI and Python applications. Ray consists of a core distributed runtime and a toolkit of libraries (Ray AIR) for accelerating ML workloads.
+- [jorge-pessoa/pytorch-colors](https://github.com/jorge-pessoa/pytorch-colors) - Small utility for color space conversions of PyTorch Tensors and Variables
+- [cvxgrp/diffcp](https://github.com/cvxgrp/diffcp) - Differentiation through cone programs
+- [cvxgrp/cvxpylayers](https://github.com/cvxgrp/cvxpylayers) - Differentiable convex optimization layers
+- [pytorch/ignite](https://github.com/pytorch/ignite) - High-level library to help with training and evaluating neural networks in PyTorch flexibly and transparently.
+- [Lightning-AI/deep-learning-project-template](https://github.com/Lightning-AI/deep-learning-project-template) - Pytorch Lightning code guideline for conferences
+- [dontLoveBugs/DORN_pytorch](https://github.com/dontLoveBugs/DORN_pytorch) - PyTorch implementation of Deep Ordinal Regression Network for Monocular Depth Estimation
+- [perrying/ssn-pytorch](https://github.com/perrying/ssn-pytorch) - PyTorch implementation of Superpixel Sampling Networks
+- [NVlabs/ssn_superpixels](https://github.com/NVlabs/ssn_superpixels) - Superpixel Sampling Networks (ECCV2018)
+- [peterwittek/ncpol2sdpa](https://github.com/peterwittek/ncpol2sdpa) - Solve global polynomial optimization problems of either commutative variables or noncommutative operators through a semidefinite programming (SDP) relaxation
+- [albumentations-team/albumentations](https://github.com/albumentations-team/albumentations) - Fast image augmentation library and an easy-to-use wrapper around other libraries. Documentation:  https://albumentations.ai/docs/ Paper about the library: https://www.mdpi.com/2078-2489/11/2/125
+- [aleju/imgaug](https://github.com/aleju/imgaug) - Image augmentation for machine learning experiments.
+- [gradslam/gradslam](https://github.com/gradslam/gradslam) - gradslam is an open source differentiable dense SLAM library for PyTorch
+- [DeformableFriends/NeuralTracking](https://github.com/DeformableFriends/NeuralTracking) - Official implementation for the NeurIPS 2020 paper Neural Non-Rigid Tracking.
+- [guildai/guildai](https://github.com/guildai/guildai) - Experiment tracking, ML developer tools
+- [mildsunrise/protobuf-inspector](https://github.com/mildsunrise/protobuf-inspector) - 🕵️ Tool to reverse-engineer Protocol Buffers with unknown definition
+- [velikodniy/tbparser](https://github.com/velikodniy/tbparser) - A parser of Tensorboard logs
+- [tqdm/tqdm](https://github.com/tqdm/tqdm) - A Fast, Extensible Progress Bar for Python and CLI
+- [milesial/Pytorch-UNet](https://github.com/milesial/Pytorch-UNet) - PyTorch implementation of the U-Net for image semantic segmentation with high quality images
+- [utiasSTARS/pykitti](https://github.com/utiasSTARS/pykitti) - Python tools for working with KITTI data.
+- [victoresque/pytorch-template](https://github.com/victoresque/pytorch-template) - PyTorch deep learning projects made easy.
+- [bokeh/bokeh](https://github.com/bokeh/bokeh) - Interactive Data Visualization in the browser, from  Python
+- [AntixK/PyTorch-VAE](https://github.com/AntixK/PyTorch-VAE) - A Collection of Variational Autoencoders (VAE) in PyTorch.
+- [AAnoosheh/ToDayGAN](https://github.com/AAnoosheh/ToDayGAN) - 
+- [sanghyun-son/EDSR-PyTorch](https://github.com/sanghyun-son/EDSR-PyTorch) - PyTorch version of the paper 'Enhanced Deep Residual Networks for Single Image Super-Resolution' (CVPRW 2017)
+- [Vandermode/ELD](https://github.com/Vandermode/ELD) - A Physics-based Noise Formation Model for Extreme Low-light Raw Denoising (CVPR 2020 Oral & TPAMI 2021)
+- [mmatl/pyrender](https://github.com/mmatl/pyrender) - Easy-to-use glTF 2.0-compliant OpenGL renderer for visualization of 3D scenes.
+- [docopt/docopt](https://github.com/docopt/docopt) - Pythonic command line arguments parser, that will make you smile
+- [nvbn/thefuck](https://github.com/nvbn/thefuck) - Magnificent app which corrects your previous console command.
+- [ranahanocka/point2mesh](https://github.com/ranahanocka/point2mesh) - Reconstruct Watertight Meshes from Point Clouds [SIGGRAPH 2020]
+- [ucdavis/metashape](https://github.com/ucdavis/metashape) - Easy, reproducible Metashape photogrammetry workflows NOTE: Active development is now happening at https://github.com/open-forest-observatory/automate-metashape
+- [agisoft-llc/metashape-scripts](https://github.com/agisoft-llc/metashape-scripts) - Python scripts for Metashape (former PhotoScan)
+- [streamlit/streamlit](https://github.com/streamlit/streamlit) - Streamlit — The fastest way to build data apps in Python
+- [guochengqian/TENet](https://github.com/guochengqian/TENet) - [ICCP'22] Rethinking Learning-based Demosaicing, Denoising, and Super-Resolution Pipeline
+- [maguowei/starred](https://github.com/maguowei/starred) - creating your own Awesome List by GitHub stars!
+- [whdcumt/BlurDetection](https://github.com/whdcumt/BlurDetection) - A Python-Based Blur Detector using Fast Fourier Transforms
+- [fled/blur_detection](https://github.com/fled/blur_detection) - Blurred Region Detection using Singular Value Decomposition (SVD)
+- [cvlab-epfl/tf-lift](https://github.com/cvlab-epfl/tf-lift) - Tensorflow port of LIFT (ECCV 2016), with training code.
+- [facebookresearch/pytorch3d](https://github.com/facebookresearch/pytorch3d) - PyTorch3D is FAIR's library of reusable components for deep learning with 3D data
+- [facebookresearch/detectron2](https://github.com/facebookresearch/detectron2) - Detectron2 is a platform for object detection, segmentation and other visual recognition tasks.
+- [facebookresearch/Detectron](https://github.com/facebookresearch/Detectron) - FAIR's research platform for object detection research, implementing popular algorithms like Mask R-CNN and RetinaNet.
+- [rbgirshick/py-faster-rcnn](https://github.com/rbgirshick/py-faster-rcnn) - Faster R-CNN (Python implementation) -- see https://github.com/ShaoqingRen/faster_rcnn for the official MATLAB version
+- [cvlab-epfl/LIFT](https://github.com/cvlab-epfl/LIFT) - Code release for the ECCV 2016 paper
+- [karpathy/researchlei](https://github.com/karpathy/researchlei) - An Academic Papers Management and Discovery System
+- [utiasSTARS/certifiable-calibration](https://github.com/utiasSTARS/certifiable-calibration) - Certifiably globally optimal extrinsic calibration for sensors providing egomotion estimates.
+- [xingyul/meteornet](https://github.com/xingyul/meteornet) - MeteorNet: Deep Learning on Dynamic 3D Point Cloud Sequences (ICCV 2019 Oral)
+- [ShichenLiu/SoftRas](https://github.com/ShichenLiu/SoftRas) - Project page of paper "Soft Rasterizer: A Differentiable Renderer for Image-based 3D Reasoning"
+- [openai/gpt-2](https://github.com/openai/gpt-2) - Code for the paper "Language Models are Unsupervised Multitask Learners"
+- [google/stereo-magnification](https://github.com/google/stereo-magnification) - Code accompanying the SIGGRAPH 2018 paper "Stereo Magnification: Learning View Synthesis using Multiplane Images"
+- [d-li14/octconv.pytorch](https://github.com/d-li14/octconv.pytorch) - PyTorch implementation of Octave Convolution with pre-trained Oct-ResNet and Oct-MobileNet models
+- [facebookresearch/OctConv](https://github.com/facebookresearch/OctConv) - Code for paper
+- [ethz-asl/hfnet](https://github.com/ethz-asl/hfnet) - From Coarse to Fine: Robust Hierarchical Localization at Large Scale with HF-Net (https://arxiv.org/abs/1812.03506)
+- [meteorshowers/X-StereoLab](https://github.com/meteorshowers/X-StereoLab) - SOS IROS 2018 GOOGLE; StereoNet ECCV2018 GOOGLE;  ActiveStereoNet ECCV2018 Oral GOOGLE; HITNET CVPR2021 GOOGLE；PLUME Uber ATG
+- [hindupuravinash/the-gan-zoo](https://github.com/hindupuravinash/the-gan-zoo) - A list of all named GANs!
+- [fhkingma/bitswap](https://github.com/fhkingma/bitswap) - Bit-Swap: Recursive Bits-Back Coding for Lossless Compression with Hierarchical Latent Variables
+- [zeromq/pyzmq](https://github.com/zeromq/pyzmq) - PyZMQ:  Python bindings for zeromq
+- [chainer/chainercv](https://github.com/chainer/chainercv) - ChainerCV: a Library for Deep Learning in Computer Vision
+- [gatagat/lap](https://github.com/gatagat/lap) - Linear Assignment Problem solver (LAPJV/LAPMOD).
+- [HIPS/autograd](https://github.com/HIPS/autograd) - Efficiently computes derivatives of numpy code.
+- [lmb-freiburg/netdef_models](https://github.com/lmb-freiburg/netdef_models) - Repository for different network models related to flow/disparity (ECCV 18)
+- [JiaRenChang/PSMNet](https://github.com/JiaRenChang/PSMNet) - Pyramid Stereo Matching Network (CVPR2018)
+- [gengshan-y/high-res-stereo](https://github.com/gengshan-y/high-res-stereo) - Hierarchical Deep Stereo Matching on High Resolution Images, CVPR 2019.
+- [ucbdrive/hd3](https://github.com/ucbdrive/hd3) - Code for Hierarchical Discrete Distribution Decomposition for Match Density Estimation (CVPR 2019)
+- [xy-guo/GwcNet](https://github.com/xy-guo/GwcNet) - Group-wise Correlation Stereo Network, CVPR 2019
+- [OpenDroneMap/ODM](https://github.com/OpenDroneMap/ODM) - A command line toolkit to generate maps, point clouds, 3D models and DEMs from drone, balloon or kite images. 📷
+- [gollth/ShutTUM](https://github.com/gollth/ShutTUM) - A photometrically calibrated multi-shutter stereo dataset for benchmarking visual odometry algorithms.
+- [facebook/prophet](https://github.com/facebook/prophet) - Tool for producing high quality forecasts for time series data that has multiple seasonality with linear or non-linear growth.
+- [100/Solid](https://github.com/100/Solid) - 🎯 A comprehensive gradient-free optimization framework written in Python
+- [chainer/chainer](https://github.com/chainer/chainer) - A flexible framework of neural networks for deep learning
+- [facebookresearch/nevergrad](https://github.com/facebookresearch/nevergrad) - A Python toolbox for performing gradient-free optimization
+- [katsugeneration/tensor-fsmn](https://github.com/katsugeneration/tensor-fsmn) - Feedforward Sequential Memory Networks (FSMN) implemented by tensorflow
+- [carpedm20/deep-rl-tensorflow](https://github.com/carpedm20/deep-rl-tensorflow) - TensorFlow implementation of Deep Reinforcement Learning papers
+- [devsisters/DQN-tensorflow](https://github.com/devsisters/DQN-tensorflow) - Tensorflow implementation of Human-Level Control through Deep Reinforcement Learning
+- [kevinzakka/spatial-transformer-network](https://github.com/kevinzakka/spatial-transformer-network) - A Tensorflow implementation of Spatial Transformer Networks
+- [eriklindernoren/PyTorch-GAN](https://github.com/eriklindernoren/PyTorch-GAN) - PyTorch implementations of Generative Adversarial Networks.
+- [eriklindernoren/Keras-GAN](https://github.com/eriklindernoren/Keras-GAN) - Keras implementations of Generative Adversarial Networks.
+- [raghakot/keras-vis](https://github.com/raghakot/keras-vis) - Neural network visualization toolkit for keras
+- [znxlwm/tensorflow-MNIST-GAN-DCGAN](https://github.com/znxlwm/tensorflow-MNIST-GAN-DCGAN) - Tensorflow implementation of Generative Adversarial Networks (GAN) and Deep Convolutional Generative Adversarial Netwokrs for MNIST dataset.
+- [yihui-he/GAN-MNIST](https://github.com/yihui-he/GAN-MNIST) - Generative Adversarial Network for MNIST with tensorflow
+- [tkarras/progressive_growing_of_gans](https://github.com/tkarras/progressive_growing_of_gans) - Progressive Growing of GANs for Improved Quality, Stability, and Variation
+- [neverhood311/Stop-motion-OBJ](https://github.com/neverhood311/Stop-motion-OBJ) - A Blender add-on for importing a sequence of OBJ meshes as frames
+- [dranjan/python-plyfile](https://github.com/dranjan/python-plyfile) - NumPy-based text/binary PLY file reader/writer for Python
+- [zhanxw/cat](https://github.com/zhanxw/cat) - Arnold Cat
+- [joelgrus/shirts](https://github.com/joelgrus/shirts) - T-Shirts, Feminism, Parenting, and Data Science
+- [graceavery/Eigenstyle](https://github.com/graceavery/Eigenstyle) - Principal Component Analysis and Fashion
+
+## R 
+
+- [TomKellyGenetics/vioplot](https://github.com/TomKellyGenetics/vioplot) - Development version of vioplot R package (CRAN maintainer)
 
 ## Rust 
 
-- [starship](https://github.com/starship/starship) - ☄🌌️  The minimal, blazing-fast, and infinitely customizable prompt for any shell!
-- [static-analysis](https://github.com/analysis-tools-dev/static-analysis) - A curated list of static analysis (SAST) tools for all programming languages, config files, build tools, and more.
+- [alexhallam/tv](https://github.com/alexhallam/tv) - 📺(tv) Tidy Viewer is a cross-platform CLI csv pretty printer that uses column styling to maximize viewer enjoyment.
+- [sharkdp/fd](https://github.com/sharkdp/fd) - A simple, fast and user-friendly alternative to 'find'
+- [starship/starship](https://github.com/starship/starship) - ☄🌌️  The minimal, blazing-fast, and infinitely customizable prompt for any shell!
+- [analysis-tools-dev/static-analysis](https://github.com/analysis-tools-dev/static-analysis) - ⚙️ A curated list of static analysis (SAST) tools and linters for all programming languages, config files, build tools, and more. The focus is on tools which improve code quality.
 
 ## Shell 
 
-- [dispnet-flownet-docker](https://github.com/lmb-freiburg/dispnet-flownet-docker) - Dockerfile and runscripts for DispNet and FlowNet1 (estimation of disparity and optical flow)
-- [android-udev-rules](https://github.com/M0Rf30/android-udev-rules) - Android udev rules list aimed to be the most comprehensive on the net
+- [lmb-freiburg/dispnet-flownet-docker](https://github.com/lmb-freiburg/dispnet-flownet-docker) - Dockerfile and runscripts for DispNet and FlowNet1 (estimation of disparity and optical flow)
+- [M0Rf30/android-udev-rules](https://github.com/M0Rf30/android-udev-rules) - Android udev rules list aimed to be the most comprehensive on the net
 
 ## TeX 
 
-- [tufte-latex](https://github.com/Tufte-LaTeX/tufte-latex) - A Tufte-inspired LaTeX class for producing handouts, papers, and books
-- [latex-gost-template](https://github.com/ledovsky/latex-gost-template) - Шаблон для создания документов latex по ГОСТ:  отчетов о НИР, курсовыx, рефератов, дипломов и др.
+- [Tufte-LaTeX/tufte-latex](https://github.com/Tufte-LaTeX/tufte-latex) - A Tufte-inspired LaTeX class for producing handouts, papers, and books
+- [ledovsky/latex-gost-template](https://github.com/ledovsky/latex-gost-template) - Шаблон для создания документов latex по ГОСТ:  отчетов о НИР, курсовыx, рефератов, дипломов и др.
 
 ## TypeScript 
 
-- [hiplot](https://github.com/facebookresearch/hiplot) - HiPlot makes understanding high dimensional data easy
-- [tensorboard](https://github.com/tensorflow/tensorboard) - TensorFlow's Visualization Toolkit
+- [kevintyj/ambient](https://github.com/kevintyj/ambient) - Color Checker Tool
+- [facebookresearch/hiplot](https://github.com/facebookresearch/hiplot) - HiPlot makes understanding high dimensional data easy
+- [tensorflow/tensorboard](https://github.com/tensorflow/tensorboard) - TensorFlow's Visualization Toolkit
 
 ## XSLT 
 
-- [docs](https://github.com/irandom/docs) - Стиль библиографии для Word по ГОСТ Р ИСО 7.0.5 2008
+- [irandom/docs](https://github.com/irandom/docs) - Стиль библиографии для Word по ГОСТ Р ИСО 7.0.5 2008
 
 
 ## License
